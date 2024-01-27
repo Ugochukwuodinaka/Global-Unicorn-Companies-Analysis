@@ -581,8 +581,6 @@ plt.show()
 
 #### Observation and Summary:
 
-The table presents the top 10 most valued unicorn companies, ranked by their respective valuations. Here are the key observations and a summary of the findings:
-
 **Bytedance** stands out as the highest-valued unicorn company, with an astonishing valuation of **$180 billion**. **Bytedance** is known for its flagship product, TikTok, a popular short-form video-sharing app.
 
 Following closely behind **Bytedance** is **SpaceX** and **SHEIN**, both valued at **$100 billion** each. **SpaceX**, founded by Elon Musk, is a leading aerospace manufacturer and space transportation company, while SHEIN is an e-commerce platform specializing in fast fashion.
@@ -597,4 +595,61 @@ Lastly, **JUUL Labs** and **Databricks** complete the top 10 with valuations of 
 
 In summary, the table showcases the immense valuations attained by the top unicorn companies, reflecting their significant influence and market dominance across various industries. These companies have disrupted traditional business models, introduced innovative technologies, and capitalized on changing consumer preferences to achieve remarkable growth and valuation milestones. Their success underscores the dynamism and potential of the unicorn ecosystem, where visionary entrepreneurs and innovative startups continue to redefine the global business landscape.
 
+The Top 8 Companies With The Highest Funding
+```
+top8_companyF = df.groupby('Company')['Funding'].sum().sort_values(ascending= False).head(8)
+top8_companyF
+```
+Plotting a barplot
 
+create a vertical barplot showing the top 8 companies that with the highest funding
+```
+plt.figure(figsize=(10, 6))  # Adjust the figure size as needed
+sns.set_style("white")
+```
+create a custom sequential color palette using seaborn
+```
+custom_palette = ['#08306b', '#08519c', '#08519c', '#08519c', '#2171b5', '#2171b5', '#2171b5', '#2171b5', '#6baed6', '#6baed6']
+```
+create the barplot with explicit palette setting
+```
+ax = sns.barplot(x=top8_companyF.index, y=top8_companyF, palette=custom_palette)
+```
+add 'Total Funding' labels to the bars with custom formatting
+```
+for index, value in enumerate(top8_companyF):
+    if value >= 1e9:
+        label = f"${value/1e9:.1f}B"
+    else:
+        label = f"${value/1e6:.1f}M"
+    ax.text(index, value, label, ha="center", va="bottom", fontsize=10, color="black", fontweight='bold')
+```
+customize the plot
+```
+ax.set(xlabel="Company", ylabel="Total Funding")
+plt.title("Top 8 Unicorn Companies With Most Funding", fontsize=15, fontweight='bold')
+plt.xticks(rotation=45)
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/b21260fb-3bdf-47dc-885a-87b86c62cef5)
+
+#### Observation and Summary:
+
+**JUUL Labs** secures the top position with the highest funding amount of **$14 billion**. **JUUL Labs** is a company known for its e-cigarette products, although it has faced significant scrutiny and regulatory challenges.
+
+Following **JUUL Labs** is **Bytedance** with **$8 billion** in funding. **Bytedance** is a Chinese technology company known for its popular short-form video-sharing app, TikTok, among other digital products.
+
+**Epic Games** and **SpaceX** share the third position with funding amounts of **$7 billion** each. **Epic Games** is a video game developer and publisher, best known for its hit game Fortnite. **SpaceX**, founded by Elon Musk, is a pioneering aerospace manufacturer and space transportation company.
+
+The next four companies - **Global Switch, Xingsheng Selected, Swiggy**, and **J&T Express** - all share the same funding amount of **$5 billion** each.
+
+- **Global Switch** is a leading provider of data center services.
+  
+- **Xingsheng** Selected is a Chinese grocery chain operator.
+  
+- **Swiggy** is an Indian online food delivery platform.
+  
+- **J&T Express** is a logistics and delivery services company based in Southeast Asia.
+  
+In summary, the table highlights the significant funding received by these top companies, which reflects investor confidence in their business models, growth potential, and ability to disrupt their respective industries. These companies have used their substantial funding to fuel expansion, innovation, and market dominance, solidifying their positions as key players in the global business landscape. Additionally, the diversity of industries represented among the top-funded companies underscores the broad range of opportunities attracting investment in today's dynamic market environment.
