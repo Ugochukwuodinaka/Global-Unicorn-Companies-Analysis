@@ -1113,3 +1113,45 @@ The explosive growth and emergence of unicorn companies continued its steady ris
 
 The effect of this decline came as a result of increased volatility in the financial markets which made it more difficult for startups to raise capital. This resulted to a decrease in valuation. This massive surge in the emergence of unicorn companies across the globe can be attributed to technological advancement, favorable market conditions, and entrepreneurial zeal. This journey through the years of the emergence of unicorns is truly a testament to the unrelenting pursuit of transformative ideas shaping the future of businesses.
 
+#### The Total No. of Companies by Year Founded
+```
+total_companies = df.groupby('Year Founded')['Company'].size().reset_index(name= 'Total Companies')
+total_companies
+```
+
+Plotting a Line chart
+
+```
+plt.figure(figsize=(13, 6))  # Adjust the figure size as needed
+sns.set_style("white")
+```
+
+create the line plot
+
+```
+ax = sns.lineplot(x='Year Founded', y='Total Companies', data=total_companies, marker='o', color='b', label='Total No. of Companies')
+```
+add labels with the count on top of each data point
+
+```
+for index, row in total_companies.iterrows():
+    ax.text(row['Year Founded'], row['Total Companies'], f'{row["Total Companies"]}', ha='left', va='bottom', fontsize=10, color='black', fontweight= 'bold')
+```
+customize the plot
+
+```
+ax.set(xlabel="Year Founded", ylabel="Total No. of Companies")
+plt.title("Unicorn Companies Trend By Year Founded", fontsize=14, fontweight= 'bold' )
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/2310066a-3ee2-4f36-9955-0018af14a1ec)
+
+#### Observation and Summary
+
+The first unicorn company was founded in the year 1919 and after decades, the second to the twelfth were all founded between 1979 and 1997 which depicts years of foundational growth
+and germination of visionary ideas. 1999 marked an increase of the founding of unicorns with 8 unicorns founded in the same year which had its early crescendo in the year 2000 when 11 unicorn companies were founded in the same year but had a mild slide to 8 unicorns in 2004. 2005 witnessed a comeback with an amazing 14 unicorn companies founded
+in the same year. From 2007, there was a massive increase in the number of unicorns founded with 24 unicorns. 
+
+An explosive increase was witnessed afterwards with 34 unicorns founded in 2009, 40 in 2010, a massive 82 in 2011 alone, and up to its peak with 155 unicorn companies founded in 2015. There was a downward slide to 110 in 2016, and down to 11 in 2021. This peak period signifies a period when entrepreneurial endeavors flourished as influenced by technological advancements, the ever evolving global business landscape and the increased adaptability of the startup ecosystem to innovative business
+
