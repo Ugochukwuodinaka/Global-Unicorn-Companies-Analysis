@@ -823,3 +823,47 @@ The table presents the top 5 cities with the most number of unicorn companies, s
 **London** rounds out the top 5 with **34 unicorn companies**. As the capital of the United Kingdom, **London** is a leading global financial center and a hub for innovation and entrepreneurship. The city's diverse economy, world-class universities, and vibrant cultural scene have fostered a thriving startup ecosystem, attracting unicorn companies in finance, technology, e-commerce, and other sectors.
 
 In summary, the table reflects the concentration of unicorn companies in key cities around the world, with **San Francisco** and **New York** leading the pack followed by **Beijing, Shanghai**, and **London**. These cities serve as epicenters of innovation and entrepreneurship, offering access to capital, talent, and a supportive ecosystem that fosters unicorn creation and growth. As the global startup landscape continues to evolve, these cities are likely to remain at the forefront of unicorn activity, driving innovation and economic growth in their respective regions.
+
+#### Unicorn Companies Distribution Across Continent
+
+Plotting a barplot
+
+create a vertical barplot showing the top 8 companies that with the highest funding
+
+```
+unicorn_cont = df.groupby('Continent')['Company'].size().sort_values(ascending= False).head(10)
+unicorn_cont
+
+unicorn_cont = df.groupby('Continent')['Company'].size().sort_values(ascending=False).head(10)
+
+plt.figure(figsize=(10, 6))
+sns.countplot(x='Continent', data=df, order=unicorn_cont.index)
+plt.title('Unicorn Companies Distribution Across Continents',fontsize=15, fontweight= 'bold')
+plt.xlabel('Continent', fontsize=10, fontweight= 'bold')
+plt.ylabel('No. of Unicorn Companies', fontsize=10, fontweight= 'bold')
+```
+add labels for the number of companies for each bar
+
+```
+for i in range(len(unicorn_cont)):
+    plt.text(x=i, y=unicorn_cont.iloc[i]+1, s=unicorn_cont.iloc[i], ha='center', fontsize=10, fontweight= 'bold')
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/6fac8733-8f36-42fb-9cad-48d95eb28f04)
+
+#### Observation and Summary:
+
+The table illustrates the distribution of unicorn companies across continents, providing insights into the geographic spread of unicorn ecosystems globally. Here are the key observations and a summary of the findings:
+
+**North America** dominates the list with a significant presence of **589 unicorn companies**. This includes the United States and Canada, which are home to some of the world's largest and most dynamic startup ecosystems, particularly in cities like San Francisco, New York, and Toronto. The region's strengths in technology, finance, and innovation have contributed to its leading position in unicorn creation.
+
+**Asia** follows **North America** with **310 unicorn companies**. **Asia's** rising prominence as a global economic powerhouse is reflected in its growing number of unicorn companies, particularly in countries like China and India. Cities like Beijing, Shanghai, Bangalore, and Singapore have emerged as key hubs for unicorn activity, driven by factors such as rapid urbanization, technological advancement, and government support for innovation.
+
+**Europe** ranks third with **143 unicorn companies**. **Europe's** diverse startup ecosystem spans countries from the United Kingdom and Germany to Sweden and France. Cities like **London, Berlin, Stockholm, and Paris have cultivated vibrant entrepreneurial communities, attracting investment and talent from around the world. While Europe's unicorn ecosystem is smaller compared to North America and Asia, it continues to grow steadily, fueled by a culture of innovation and a strong tradition of entrepreneurship.
+
+**South America** follows with 21 unicorn companies. While **South America's** unicorn ecosystem is relatively smaller compared to other continents, countries like Brazil and Argentina have seen the emergence of unicorns in sectors such as fintech, e-commerce, and transportation. Cities like São Paulo and Buenos Aires are leading centers for startup activity, driven by a growing middle class, increasing internet penetration, and a supportive regulatory environment.
+
+**Oceania** and **Africa** have fewer unicorn companies, with 8 and 3 unicorns respectively. Despite their smaller numbers, countries like Australia and New Zealand in Oceania, and Nigeria and South Africa in Africa, have seen the emergence of unicorns in sectors such as fintech, e-commerce, and logistics. Cities like Sydney, Melbourne, Lagos, and Cape Town are emerging as hubs for innovation and entrepreneurship, attracting investment and talent from both domestic and international sources.
+
+In summary, the table highlights the global distribution of unicorn companies across continents, showcasing the diversity and dynamism of startup ecosystems around the world. While North America and Asia lead in terms of the sheer number of unicorn companies, Europe, South America, Oceania, and Africa also play important roles in driving innovation and economic growth through entrepreneurship. As the global startup landscape continues to evolve, the distribution of unicorn companies is likely to shift and expand, reflecting changing economic, technological, and social trends across regions.
