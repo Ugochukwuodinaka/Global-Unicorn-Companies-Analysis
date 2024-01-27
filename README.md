@@ -867,3 +867,66 @@ The table illustrates the distribution of unicorn companies across continents, p
 **Oceania** and **Africa** have fewer unicorn companies, with 8 and 3 unicorns respectively. Despite their smaller numbers, countries like Australia and New Zealand in Oceania, and Nigeria and South Africa in Africa, have seen the emergence of unicorns in sectors such as fintech, e-commerce, and logistics. Cities like Sydney, Melbourne, Lagos, and Cape Town are emerging as hubs for innovation and entrepreneurship, attracting investment and talent from both domestic and international sources.
 
 In summary, the table highlights the global distribution of unicorn companies across continents, showcasing the diversity and dynamism of startup ecosystems around the world. While North America and Asia lead in terms of the sheer number of unicorn companies, Europe, South America, Oceania, and Africa also play important roles in driving innovation and economic growth through entrepreneurship. As the global startup landscape continues to evolve, the distribution of unicorn companies is likely to shift and expand, reflecting changing economic, technological, and social trends across regions.
+
+#### Unicorn Companies Distribution across Industrie
+```
+company_spread = df.groupby('Industry')['Company'].size().sort_values(ascending= False).reset_index(name= 'Total Companies')
+company_spread
+```
+
+Plotting a horizontal Barplot
+
+```
+plt.figure(figsize=(10, 6))
+plt.barh(company_spread['Industry'], company_spread['Total Companies'])
+plt.title('Unicorn Companies Distribution Across Industries', fontsize=14, fontweight= 'bold')
+plt.xlabel('Total No. of Unicorn Companies', fontsize=10, fontweight= 'bold')
+plt.ylabel('Unicorn Industries', fontsize=10, fontweight= 'bold')
+plt.grid(False)
+```
+add labels for the number of companies for each industry
+
+```
+for i in range(len(company_spread)):
+    plt.text(x=company_spread['Total Companies'][i], y=i, 
+             s=company_spread['Total Companies'][i], ha='left', va='center', fontsize=10, fontweight= 'bold')
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/6cd7e198-b3ad-45bb-86be-e77fa9612ccb)
+
+#### Observation and Summary:
+
+The table provides insights into the distribution of unicorn companies across various industries, shedding light on the sectors where unicorn ecosystems have flourished. Here are the key observations and a summary of the findings:
+
+**Fintech** emerges as the leading industry, with a total of **224 unicorn companies**. **Fintech** companies leverage technology to innovate and disrupt traditional financial services, including banking, payments, lending, and insurance. The significant number of fintech unicorns underscores the growing demand for digital financial solutions and the transformative impact of technology on the finance industry.
+
+**Internet software & services** follows closely behind, with **205 unicorn companies**. This industry encompasses a wide range of internet-based software applications and services, including social media platforms, cloud computing services, and online marketplaces. The abundance of unicorn companies in this sector reflects the pervasive role of the internet in modern life and the continued growth of digital platforms and services.
+
+**E-commerce & direct-to-consumer** ranks third with **111 unicorn companies**. **E-commerce** and direct-to-consumer** companies leverage online platforms and digital channels to sell products and services directly to consumers, bypassing traditional retail channels. The popularity of e-commerce unicorns highlights the shift towards online shopping and the increasing importance of digital commerce in today's economy.
+
+**Artificial Intelligence (AI)** occupies the fourth position with **84 unicorn companies**. AI companies develop technologies that enable machines to simulate human intelligence and perform tasks such as data analysis, automation, and decision-making. The emergence of AI unicorns underscores the growing adoption of AI across various industries, driving innovation and efficiency through intelligent automation and predictive analytics.
+
+**Health:** Rounding out the top five with **74 unicorn companies**, the **health** industry includes companies operating in sectors such as biotechnology, pharmaceuticals, healthcare IT, and telemedicine. The presence of health unicorns reflects the increasing focus on healthcare innovation, personalized medicine, and digital health solutions to address global health challenges.
+
+**Other:** This category includes a diverse range of industries not specifically listed, with **58 unicorn companies**. It likely encompasses sectors such as energy, real estate, and agriculture, among others. Despite the lack of specificity, the number of unicorn companies in this category highlights the broad range of opportunities attracting investment and innovation in various sectors.
+
+**Supply chain, logistics, & delivery:** With **57 unicorn companies**, this sector focuses on optimizing supply chain operations, logistics management, and last-mile delivery services. The presence of unicorn companies in this industry underscores the importance of efficient logistics and delivery networks in supporting global trade and commerce.
+
+**Cybersecurity:** Featuring **50 unicorn companies**, the **cybersecurity** sector addresses the growing threats posed by cyberattacks and data breaches. Unicorn companies in this industry develop innovative solutions to safeguard digital assets, protect sensitive information, and ensure the security of online transactions and communications.
+
+**Data management & analytics:** With **41 unicorn companies**, this industry focuses on leveraging data to drive business insights, decision-making, and value creation. Unicorn companies in this sector develop advanced analytics tools, data visualization platforms, and data management solutions to help organizations unlock the value of their data assets.
+
+**Mobile & telecommunications:** This industry, with **38 unicorn companies**, encompasses companies operating in mobile technology, telecommunications infrastructure, and wireless communication services. Unicorn companies in this sector drive innovation in mobile devices, network technologies, and digital connectivity, shaping the future of communication and connectivity.
+
+**Hardware:** With **34 unicorn companies**, the hardware industry focuses on designing and manufacturing physical devices, electronics, and hardware components. Unicorn companies in this sector develop innovative hardware solutions for consumer electronics, IoT devices, and industrial applications, driving advancements in technology and engineering.
+
+**Auto & transportation:** Featuring **31 unicorn companies**, this sector focuses on transforming the automotive and transportation industries through innovations in electric vehicles, autonomous driving technology, and mobility-as-a-service solutions. Unicorn companies in this industry are reshaping the future of transportation, promoting sustainability, safety, and efficiency.
+
+**Edtech:** With **28 unicorn companies**, the **edtech** sector addresses the evolving needs of education and learning through technology-driven solutions. Unicorn companies in this industry develop online learning platforms, educational content, and digital tools to enhance access to quality education, promote lifelong learning, and drive educational outcomes.
+
+**Consumer & retail:** This industry, with **25 unicorn companies**, focuses on meeting consumer needs and preferences through innovative products, services, and retail experiences. Unicorn companies in this sector disrupt traditional retail models, introduce new consumer products, and leverage technology to enhance the retail customer experience.
+
+**Travel:** Rounding out the list with **14 unicorn companies**, the **travel industry** encompasses companies operating in travel booking, accommodation, transportation, and tourism services. Unicorn companies in this sector leverage technology to streamline travel planning, improve booking experiences, and enhance the overall travel journey for consumers.
+
+In summary, the distribution of unicorn companies across industries reflects the diverse range of opportunities and challenges shaping the modern economy. From fintech and internet software to e-commerce, AI, and health, unicorn companies are driving innovation, disruption, and value creation across various sectors, shaping the future of business and society.
