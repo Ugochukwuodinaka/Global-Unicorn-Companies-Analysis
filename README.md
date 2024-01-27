@@ -213,6 +213,7 @@ confirm that the column "Funding" now has the numerical value 0
 ```
 df[df['Funding'] == '0'].head(12)
 ```
+
 follow these next steps in code order:
 - convert the Valuation Column from a "string" to a "float".
 - define a custom function to convert the string to float
@@ -221,6 +222,7 @@ follow these next steps in code order:
 - get the last character to determine the scale (Billion or Million)
 - multiply the numeric value based on the scale
 - re-add the '$' sign and return as a Decimal object
+  
 ```
 def convert_valuation(valuation_str):
     valuation_num = valuation_str.replace('$', ' ')
@@ -237,15 +239,20 @@ def convert_valuation(valuation_str):
     
     return float(valuation_float)
 ```
+
 apply the custom function to the "Funding" column and create a new column 'Funding Decimal'
+
 ```
 df['Valuation Decimal'] = df['Valuation'].apply(convert_valuation)    
 df.head()
 ```
+
 confirm data type changes
+
 ```
 df.dtypes
 ```
+
 follow these next steps in code order:
 - convert the Funding Column from a "string" to a "float".
 - define a custom function to convert the string to Decimal
@@ -254,6 +261,7 @@ follow these next steps in code order:
 - get the last character to determine the scale (Billion or Million)
 - multiply the numeric value based on the scale
 - re-add back the '$' sign and return as a Decimal object
+  
 ```
 def convert_funding(funding_str):
     funding_num = funding_str.replace('$', ' ')
@@ -272,34 +280,49 @@ def convert_funding(funding_str):
         
     return float(funding_float)
 ```
+
 apply the custom function to the "Funding" column and create a new column 'Funding Decimal'
+
 ```
 df['Funding Decimal'] = df['Funding'].apply(convert_funding)  
 df.head()
 ```
+
 re-confirm data types
+
 ```
 df.dtypes
 ```
+
 drop the 'Valuation' and 'Funding' columns so that we can use the new one created
+
 ```
 df.drop(columns= ['Valuation', 'Funding'], inplace= True)
 df.dtypes
 ```
-reename the 'Valuation Decimal' and 'Funding Decimal' back to 'Valuation' and 'Funding'
+
+rename the 'Valuation Decimal' and 'Funding Decimal' back to 'Valuation' and 'Funding'
+
 ```
 df.rename(columns={'Valuation Decimal' : 'Valuation'}, inplace= True)
 df.rename(columns={'Funding Decimal' : 'Funding'}, inplace= True)
-``
+```
+
 re-confirm column names and data types
+
+
 ```
 df.dtypes
 ```
+
+
 follow these next steps in code order:
 - change the position of the column 'Valuation' back to where it was initially
 - remove the 'Valuation' column from the current position
 - insert the 'Valuation' column at the desired position
 - reindex the dataframe with the new column order
+
+
 ```
 column_names= df.columns.tolist()
 valuation_col = column_names.pop(column_names.index('Valuation'))
@@ -308,11 +331,15 @@ column_names.insert(1, valuation_col)
 df = df.reindex(columns= column_names)    
 df.head()
 ```
+
+
 follow these next steps in code order:
 - change the positions of the columns 'Funding' back to where they were initially
 - remove the 'Valuation' column from the current position
 - insert the 'Valuation' column at the desired position
 - reindex the dataframe with the new column order
+
+
 ```
 column_names= df.columns.tolist()
 valuation_col = column_names.pop(column_names.index('Funding'))
@@ -321,7 +348,10 @@ column_names.insert(8, valuation_col)
 df = df.reindex(columns= column_names)    
 df.head()
 ```
+
 check all changes with the top 10 rows of data
+
+
 ```
 df.head(10)
 ```
