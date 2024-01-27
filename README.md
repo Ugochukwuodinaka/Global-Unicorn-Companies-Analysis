@@ -1,5 +1,16 @@
 # Exploratory-Data-Analysis-of-Global-Unicorn-Companies
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [EDA With Python](#data-cleaning-and-exploratory-data-analysis-using-python)
+- [KPIs](#key-performance-indicators)
+- [Univariate Analysis](#univariate-analysis)
+- [Bivariate Amalysis](#bivariate-analysis)
+- [Observation and Summary](#observation-and-summary)
+- [Factors That Influence The Emergence of Unicorns](#a-survey-of-factors-that-influences-the-emergence-of-unicorns)
+- [Recommendations Towards The Growth of Unicorn Companies](#recommendations-towards-the-growth-of-unicorn-companies)
+
+
 ## Project Screenshot From Power Bi Dashboard
 ![Unicorn_Companies_Analysis_Project_Dashboard_page- 1](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/d35e957d-8082-4c86-9f2a-d381917ff0ef)
 
@@ -461,7 +472,7 @@ recheck for distinct industries
 df.Industry.unique()
 ```
 
-### KEY PERFORMANCE INDICATORS (KPIs)
+### KEY PERFORMANCE INDICATORS
 
 #### Total Valuation of Unicorn Companies
 ```
@@ -1155,7 +1166,7 @@ in the same year. From 2007, there was a massive increase in the number of unico
 
 An explosive increase was witnessed afterwards with 34 unicorns founded in 2009, 40 in 2010, a massive 82 in 2011 alone, and up to its peak with 155 unicorn companies founded in 2015. There was a downward slide to 110 in 2016, and down to 11 in 2021. This peak period signifies a period when entrepreneurial endeavors flourished as influenced by technological advancements, the ever evolving global business landscape and the increased adaptability of the startup ecosystem to innovative business
 
-### A Survey of Factors That Influence The Emergence of Unicorns
+## A Survey of Factors That Influences The Emergence of Unicorns
 
 **1.Timeline Variation:** 
 
@@ -1178,7 +1189,7 @@ With the rapid advancement of technology, the inter-connective nature of the glo
 Market and economic conditions plays a vital role. Periods of economic growth and increased investor confidence may be advantageous to companies by having easier access to funding which can aid their rapid growth towards attaining the status of a unicorn company.
 
 
-### Recommendations Towards The Growth of Unicorn Companies
+## Recommendations Towards The Growth of Unicorn Companies
 
 **1.Strategic Vision and Clarity:** 
 
