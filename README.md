@@ -9,6 +9,7 @@
 - [Observation and Summary](#observation-and-summary)
 - [Factors That Influence The Emergence of Unicorns](#a-survey-of-factors-that-influences-the-emergence-of-unicorns)
 - [Recommendations Towards The Growth of Unicorn Companies](#recommendations-towards-the-growth-of-unicorn-companies)
+- [View Dashboard Report](#view-power-bi-dashboard-report)
 
 
 ## Project Screenshot From Power Bi Dashboard
@@ -1212,3 +1213,7 @@ Maintain financial discipline and transparency. Implement robust financial manag
 **6 Global Expansion and Internationalization:** 
 
 Consider opportunities for global expansion. Unicorn companies often have the potential to operate on a global scale. Expanding internationally can unlock new markets, customer bases, and revenue streams.
+
+## View Power BI Dashboard Report
+Here’s a link to a https://app.powerbi.com/view?r=eyJrIjoiNTgxOTQ1N2QtM2RmOS00OTQzLWFiOTgtMTY4YjEwMzY4NTlmIiwidCI6IjdlYzI5NjU5LTNjZjItNGYzZi1hYmIzLWE3MjJlZGY3ZmYyZCJ9 I created in the second phase of this project . This dashboard report displays a vivid visual of this analysis on Global Unicorn Compoanies.
+
