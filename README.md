@@ -540,6 +540,44 @@ The dataset includes the year in which each unicorn company was founded. The mea
 
 In summary, the descriptive statistics provide valuable insights into the characteristics of unicorn companies, including their valuations, funding amounts, and founding years. Overall, the data suggests that unicorn companies are highly valued, attract significant investment capital, and are relatively young, with many having been founded in the past decade. However, there is also significant variability among unicorn companies, with some outliers having exceptionally high valuations and funding amounts.
 
+#### Bivariate Analysis
+
+The Top 10 Most Valued Companies
+```
+top10_companies = df.groupby('Company')['Valuation'].sum().sort_values(ascending= False).head(10).reset_index(name= 'Valuation')
+top10_companies
+```
+Plotting a hbarplot
+
+create a figure and axis
+```
+fig, ax = plt.subplots(figsize=(10, 6))
+```
+create the horizontal barplot with a custom color palette
+```
+sns.barplot(x="Valuation", y="Company", data=top10_companies, palette=['#08306b', '#08519c', '#08519c', '#2171b5',  '#4292c6', '#6baed6', '#6baed6', '#9ecae1', '#c6dbef', '#c6dbef'], ax=ax)
+```
+
+add 'Valuation' labels to the bars
+```
+for index, row in top10_companies.iterrows():
+    valuation = row["Valuation"]
+    if valuation >= 1e9:
+        label = f"${valuation/1e9:.1f}B"
+    else:
+        label = f"${valuation/1e6:.1f}M"
+    ax.text(valuation, index, label, ha="left", va="center", fontsize=10, color="black", fontweight= 'bold')
+```
+
+customize the plot
+```
+ax.set(xlabel="Total Valuation", ylabel="Company")
+plt.title("Top 10 Most Valuable Unicorn Companies", fontsize=14, fontweight= 'bold')
+plt.xticks(rotation=0)
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/b246a84b-327f-4865-9e9f-eb540e54eb41)
 
 
 
