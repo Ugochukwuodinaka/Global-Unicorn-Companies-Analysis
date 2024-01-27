@@ -450,4 +450,97 @@ plt.show()
 ```
 ![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/747039b5-952a-43a4-bc53-3bdde91c0f81)
 
+check the number of Unicorn Company locations by continent
+```
+new_size = df.groupby(['Continent', 'Country']).size()
+new_size
+```
+
+recheck for distinct industries
+```
+df.Industry.unique()
+```
+
+### KEY PERFORMANCE INDICATORS (KPIs)
+
+#### Total Valuation of Unicorn Companies
+```
+valuation_sum = df['Valuation'].sum()
+new_valuation = '${:,.3f}.T'.format(valuation_sum/ 10**12)
+new_valuation
+```
+
+#### Total Number of Unicorn Companies
+```
+companies = df.Company.nunique() - -1
+companies
+```
+
+#### Total Number of Unicorn Industries
+```
+industries = df.Industry.nunique()
+industries
+```
+
+#### Total Number of Unicorn Continents
+```
+continents = df.Continent.nunique()
+continents
+```
+
+#### Total No of Unicorn Countries
+```
+countries = df.Country.nunique()
+countries
+```
+
+#### Total Number of Unicorn Cities
+```
+cities = df.City.nunique()
+cities
+```
+
+#### Total Amount Received by Unicorn Companies
+```
+funding_sum = df['Funding'].sum()
+new_funding = '${:,.3f}.B'.format(funding_sum/ 10**9)
+new_funding
+```
+
+### Visualization and Oobservations
+
+#### Univariate Analysis
+
+the Decriptive Statistics of the Numerical Columns
+```
+int_columns = df['Year Founded'].describe().astype(int)
+float_columns = df[['Valuation','Funding']].describe().astype(float)
+```
+
+concatenate/ join the'Year Funded' to show as int, and 'Valuation' and 'Funding' to show as float  
+```
+joined_columns = pd.concat([float_columns, int_columns], axis= 1)
+joined_columns
+```
+![Unicorn 4](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/02febdc2-5aa6-42d3-bad7-23d27ededf12)
+
+#### Observation and Summary:
+
+**Valuation:**
+
+The dataset includes information on the valuation of 1074 unicorn companies. The mean valuation of these companies is approximately $3.46 billion, indicating that, on average, unicorn companies are valued quite high in the market. The standard deviation of valuations is relatively large, indicating significant variability in the valuations of different companies. The minimum valuation observed is $1 billion, which is the threshold for achieving unicorn status. The maximum valuation in the dataset is an impressive $180 billion, showcasing the immense value some unicorn companies have accrued. The interquartile range (IQR) of valuations spans from $1 billion to $3 billion, indicating that most companies fall within this range, with some outliers having much higher valuations.
+
+**Funding:**
+
+The dataset also provides information on the funding received by each unicorn company. The mean funding raised by these companies is approximately $551 million, highlighting the substantial investment capital these companies have attracted. The standard deviation of funding amounts is relatively high, indicating significant variability in the amounts of funding raised by different companies. The minimum funding amount observed is $0, suggesting that some companies may not have raised any external funding. The maximum funding amount in the dataset is $14 billion, indicating the substantial financial backing received by some unicorn companies. The IQR of funding amounts spans from $218 million to $603 million, indicating that most companies fall within this range, with some outliers having received much larger amounts of funding.
+
+**Year Founded:**
+
+The dataset includes the year in which each unicorn company was founded. The mean year of founding for these companies is approximately 2012, suggesting that many unicorn companies are relatively young, having been founded in the past decade. The standard deviation of founding years is 5 years, indicating some variability in the ages of unicorn companies. The earliest founding year observed is 1919, indicating that some unicorn companies have been around for over a century. The most recent founding year observed is 2021, indicating that new unicorn companies continue to emerge even in the present year. The majority of unicorn companies in the dataset were founded between 2011 and 2016, as indicated by the interquartile range.
+
+In summary, the descriptive statistics provide valuable insights into the characteristics of unicorn companies, including their valuations, funding amounts, and founding years. Overall, the data suggests that unicorn companies are highly valued, attract significant investment capital, and are relatively young, with many having been founded in the past decade. However, there is also significant variability among unicorn companies, with some outliers having exceptionally high valuations and funding amounts.
+
+
+
+
 
