@@ -157,9 +157,9 @@ df.Country.unique().tolist()
 ### Data Cleaning Processes
 - Convert the Date Joined column from a "string" to a "Datetime"
 
-- Fill the missing values in City with "NaN"
+- Fill the missing values in City with "Uknown"
 
-- Fill the missing value in Select Investors with "NaN"
+- Fill the missing value in Select Investors with "Uknown"
 
 - Replace the "Artificial intelligence" in Industry column with "Artificial Intelligence"
 
@@ -168,3 +168,161 @@ df.Country.unique().tolist()
 - Convert the Valuation Column from a "string" to a "float" with the "$" sign
 
 - Convert the Funding column from a "string" to a "float" with the "$" sign
+
+convert the 'Date Joined' column from a 'string' to a 'Datetime'
+```
+df['Date Joined'] = pd.to_datetime(df['Date Joined'])
+```
+check if Date Joined data type has been changed to Datetime
+```
+df.dtypes
+```
+replace the "Artificial intelligence" in **Industry** column with "Artificial Intelligence"
+```
+df['Industry'] = df['Industry'].replace('Artificial intelligence', 'Artificial Intelligence')
+```
+check if the change has been effected
+```
+df.Industry.unique().tolist()
+```
+fill the missing values in city with 'Uknown'
+```
+df['City'] = df['City'].fillna('Unknown')
+```
+fill the missing value in 'Select Investors' with 'Unknown'
+```
+df['Select Investors'] = df['Select Investors'].fillna('Unknown')
+```
+re-ceck to confirm that no column now has null values
+```
+df.isnull().sum()
+```
+find the column data row with string data type 'Unknown' in the 'Funding' column
+```
+df[df['Funding'] == 'Unknown'].head(12)
+```
+replace the string "Unknown" in Funding with "0"
+```
+df['Funding'] = df['Funding'].replace('Unknown', '0')
+```
+check to confirm that the "Fudning" column no longer has the string "Uknown"
+```
+df[df['Funding'] == 'Unknown'].head()
+```
+confirm that the column "Funding" now has the numerical value 0
+```
+df[df['Funding'] == '0'].head(12)
+```
+follow these next steps in code order:
+- convert the Valuation Column from a "string" to a "float".
+- define a custom function to convert the string to float
+- remove the '$' signs from the string
+- extract the numerical part of the string
+- get the last character to determine the scale (Billion or Million)
+- multiply the numeric value based on the scale
+- re-add the '$' sign and return as a Decimal object
+```
+def convert_valuation(valuation_str):
+    valuation_num = valuation_str.replace('$', ' ')
+    numeric_part = valuation_num[:-1]
+    scale = valuation_num[-1]
+
+    if  scale == 'B':
+        valuation_float = float(numeric_part) * 1e9
+    elif scale == 'M':
+        valuation_float = float(numeric_part) * 1e6
+    else:
+        raise ValueError('Invalid scale: {}', format(scale))
+        
+    
+    return float(valuation_float)
+```
+apply the custom function to the "Funding" column and create a new column 'Funding Decimal'
+```
+df['Valuation Decimal'] = df['Valuation'].apply(convert_valuation)    
+df.head()
+```
+confirm data type changes
+```
+df.dtypes
+```
+follow these next steps in code order:
+- convert the Funding Column from a "string" to a "float".
+- define a custom function to convert the string to Decimal
+- remove the '$' signs from the string
+- extract the numerical part of the string
+- get the last character to determine the scale (Billion or Million)
+- multiply the numeric value based on the scale
+- re-add back the '$' sign and return as a Decimal object
+```
+def convert_funding(funding_str):
+    funding_num = funding_str.replace('$', ' ')
+    numeric_part = funding_num[:-1]
+    
+    scale = funding_num[-1]
+    
+    if  scale == 'B':
+        funding_float = float(numeric_part) * 1e9
+    elif scale == 'M':
+        funding_float = float(numeric_part) * 1e6
+    elif scale == '0':
+        funding_float = '0'
+    else:
+        raise ValueError('Invalid scale: {}', format(scale))
+        
+    return float(funding_float)
+```
+apply the custom function to the "Funding" column and create a new column 'Funding Decimal'
+```
+df['Funding Decimal'] = df['Funding'].apply(convert_funding)  
+df.head()
+```
+re-confirm data types
+```
+df.dtypes
+```
+drop the 'Valuation' and 'Funding' columns so that we can use the new one created
+```
+df.drop(columns= ['Valuation', 'Funding'], inplace= True)
+df.dtypes
+```
+reename the 'Valuation Decimal' and 'Funding Decimal' back to 'Valuation' and 'Funding'
+```
+df.rename(columns={'Valuation Decimal' : 'Valuation'}, inplace= True)
+df.rename(columns={'Funding Decimal' : 'Funding'}, inplace= True)
+``
+re-confirm column names and data types
+```
+df.dtypes
+```
+follow these next steps in code order:
+- change the position of the column 'Valuation' back to where it was initially
+- remove the 'Valuation' column from the current position
+- insert the 'Valuation' column at the desired position
+- reindex the dataframe with the new column order
+```
+column_names= df.columns.tolist()
+valuation_col = column_names.pop(column_names.index('Valuation'))
+column_names.insert(1, valuation_col)
+
+df = df.reindex(columns= column_names)    
+df.head()
+```
+follow these next steps in code order:
+- change the positions of the columns 'Funding' back to where they were initially
+- remove the 'Valuation' column from the current position
+- insert the 'Valuation' column at the desired position
+- reindex the dataframe with the new column order
+```
+column_names= df.columns.tolist()
+valuation_col = column_names.pop(column_names.index('Funding'))
+column_names.insert(8, valuation_col)
+
+df = df.reindex(columns= column_names)    
+df.head()
+```
+check all changes with the top 10 rows of data
+```
+df.head(10)
+```
+![Unicorn 3](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/7c4c9623-2aed-4845-a5be-90a44065dff6)
