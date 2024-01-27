@@ -930,3 +930,86 @@ The table provides insights into the distribution of unicorn companies across va
 **Travel:** Rounding out the list with **14 unicorn companies**, the **travel industry** encompasses companies operating in travel booking, accommodation, transportation, and tourism services. Unicorn companies in this sector leverage technology to streamline travel planning, improve booking experiences, and enhance the overall travel journey for consumers.
 
 In summary, the distribution of unicorn companies across industries reflects the diverse range of opportunities and challenges shaping the modern economy. From fintech and internet software to e-commerce, AI, and health, unicorn companies are driving innovation, disruption, and value creation across various sectors, shaping the future of business and society.
+
+#### The Top 10 Select Investors that have invested the highest funds in Unicorn Companies
+```
+def format_funding(funding):
+    if funding >= 1000000000:
+        return f'${funding/1000000000:.1f}B'
+    elif funding >= 1000000:
+        return f'${funding/1000000:.1f}M'
+    else:
+        return f'${funding}'
+
+top10_investors = df.groupby('Select Investors')['Funding'].sum().sort_values(ascending=False).head(10)
+top10_investors = top10_investors.apply(format_funding)
+top10_investors
+```
+
+
+# Create a Bar plot as a Table for Top 10 Select Investors by Funding
+
+def format_funding(funding):
+    if funding >= 1000000000:
+        return f'${funding/1000000000:.1f}B'
+    elif funding >= 1000000:
+        return f'${funding/1000000:.1f}M'
+    else:
+        return f'${funding}'
+
+top10_investors = df.groupby('Select Investors')['Funding'].sum().sort_values(ascending=False).head(10)
+top10_investors = top10_investors.apply(format_funding)
+
+Create a figure and axes for the table-like graph
+```
+fig, ax = plt.subplots(figsize=(8, 5))
+```
+create a bar plot as a table background
+
+```
+ax.axis('off')
+ax.bar(0, 0, color='white')
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
+```
+
+create a table using the 'table' function
+
+```
+cell_text = []
+for label, value in top10_investors.items():
+    cell_text.append([label, value])
+
+table = ax.table(cellText=cell_text, cellLoc='center', colLabels=['SELECT INVESTORS', 'FUNDING'])
+```
+
+style the table
+
+```
+table.auto_set_font_size(False)
+table.set_fontsize(12)
+table.scale(2, 2)  # Adjust the table size
+plt.title("Top 10 Select Investors by Funding", fontsize=20, fontweight='bold')
+
+plt.show()
+```
+### Top 10 Select Investors By Funding
+![Unicorn 5](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/3f337cac-d27a-45ce-a55d-482d006c2a6f)
+
+#### Observation and Summary:
+
+The table provides valuable insights into the top 10 select investors by funding, showcasing the investment firms and groups that have made significant contributions to unicorn companies through substantial funding rounds. Here's the observation and summary:
+
+**Diverse Investor Landscape:** The list encompasses a diverse array of investors, including prominent venture capital firms, multinational corporations, and investment groups. This diversity reflects the broad spectrum of players involved in funding unicorn companies, ranging from traditional VC firms like **Sequoia Capital and Founders** Fund to corporate giants like **Tencent Holdings and Softbank Group**.
+
+**Strategic Syndicates:** Several entries in the list feature syndicates of investors collaborating to fund unicorn companies. For instance, the second entry includes **Sequoia Capital China, SIG Asia Investments, Sina Weibo, and Softbank Group**, highlighting the strategic alliances formed by investors to leverage their combined resources and expertise in supporting high-growth startups.
+
+**Global Reach:** The presence of investors from various regions underscores the global nature of unicorn funding. Investors like **Tiger Global Management, KKR,** and **Hillhouse Capital Management** operate on a global scale, providing capital to unicorn companies across different continents and industries, further enriching the global startup ecosystem.
+
+**Significant Funding Amounts:** The funding amounts allocated by these investors are substantial, ranging from **$4 billion to $14 billion**. This underscores the immense financial backing required by unicorn companies to fuel their growth, scale operations, and compete in rapidly evolving markets.
+
+**Strategic Investment Focus:** Each investor brings its unique investment thesis and strategic focus to the table. For example, **Tencent Holdings**, a leading Chinese conglomerate, strategically invests in technology and internet companies, while **Sequoia Capital China** focuses on early-stage investments in innovative startups.
+
+**Impact on Unicorn Ecosystem:** Collectively, these top investors play a critical role in shaping the unicorn ecosystem, driving innovation, and facilitating the growth of disruptive startups. Their investments provide crucial capital, mentorship, and networking opportunities that enable unicorn companies to achieve their ambitious growth targets and disrupt traditional industries.
+
+In summary, the top 10 select investors by funding represent a diverse and influential group of stakeholders that contribute significantly to the success and growth of unicorn companies worldwide. Their strategic investments, extensive networks, and deep pockets play a pivotal role in fueling innovation, driving market disruption, and shaping the future of the global economy.
