@@ -51,3 +51,120 @@ The dataset contains 8 columns and here's a breakdown of what each column repres
 **Funding:** This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
 
 **Select Investors:** This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
+
+## Data Cleaning and Exploratory Data Analysis using Python
+
+### EXPLORATORY DATA ANALYSIS STEPS
+- Importing the required Libraries for EDA
+- Acquiring the dataset
+- Data Preparation
+- Data Profiling
+- Data Cleaning
+- Dropping Duplicates
+     - Removing Missing Values
+     - Finding Outliers
+- Finding Correlations
+- Visualizations
+
+Importing the required Libraries for EDA
+```
+import pandas as pd
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import plotly.express as px
+```
+Assign df as pandas DataFrame
+```
+df = pd.DataFrame()
+```
+Acquire the dataset
+```
+df = pd.read_csv(r"Unicorn_Companies.csv")
+```
+The dataset in a DataFrame
+```
+df
+```
+![Unicorn 1](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/19a53090-cbff-4a1d-bfa7-6aa8e2ef2413)
+
+Check first 10 rows of data
+```
+df.head(10)
+```
+Last 10 rows of data
+```
+df.tail(10)
+```
+
+### DATA PROFILING STEPS
+- Data profiling utilizes methods of descriptive statistics such as:
+  1. Data type
+  2. Quantile statistics (central tendecies)
+  3. Length (length and shape of the dataset)
+  4. Discrete values
+  5. Uniqueness (unique values)
+  6. Occurence of null values and etc.
+
+shape of the data
+```
+df.shape
+```
+size of data
+```
+df.size
+```
+
+check the columns
+```
+df.columns.tolist()
+```
+check for the data information
+```
+df.info()
+```
+Check for missing values
+```
+df.isnull().sum()
+```
+check for numerical columns
+```
+categorical_cols = df.select_dtypes(include = [int, float]).columns.tolist()
+categorical_cols
+```
+check for categorical columns
+```
+numerical_cols = df.select_dtypes(include = ['category', 'object']).columns
+numerical_cols
+```
+```
+df.describe(include= ['object'])
+```
+check for distinct or duplicate continents
+```
+df.Continent.unique()
+```
+check for distinct or duplicate industries
+```
+df.Industry.unique().tolist()
+```
+check for distinct or duplicate countries
+```
+df.Country.unique().tolist()
+```
+
+### Data Cleaning Processes
+- Convert the Date Joined column from a "string" to a "Datetime"
+
+- Fill the missing values in City with "NaN"
+
+- Fill the missing value in Select Investors with "NaN"
+
+- Replace the "Artificial intelligence" in Industry column with "Artificial Intelligence"
+
+- Replace the string "Unknown" in Funding with "0"
+
+- Convert the Valuation Column from a "string" to a "float" with the "$" sign
+
+- Convert the Funding column from a "string" to a "float" with the "$" sign
