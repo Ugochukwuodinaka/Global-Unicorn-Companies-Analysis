@@ -356,3 +356,98 @@ check all changes with the top 10 rows of data
 df.head(10)
 ```
 ![Unicorn 3](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/7c4c9623-2aed-4845-a5be-90a44065dff6)
+
+### Further Exploratory Data Analysis after Data Cleaning
+
+Data Profiling
+
+recheck the data size
+```
+df.shape
+```
+
+recheck the data size
+```
+df.size
+```
+
+recheck the data columns
+```
+df.columns
+```
+
+recheck the data information
+```
+df.info()
+```
+
+recheck for null values
+```
+df.isnull().sum()
+```
+
+check for negative values in 'Valuation'
+```
+df[df['Valuation'] < 0]
+```
+
+check for negative values in 'Valuation'
+```
+df[df['Funding'] < 0]
+```
+
+check the dataframe description for objects
+```
+df.describe(include= ['object'])
+```
+
+recheck the data description
+
+you can see the the Valuation and Funding are now showing up
+```
+int_columns = df['Year Founded'].describe().astype(int)
+float_columns = df[['Valuation','Funding']].describe().astype(float)
+```
+
+concatenate/ join the'Year Funded' to show as int, and 'Valuation' and 'Funding' to show as float 
+```
+joined_columns = pd.concat([float_columns, int_columns], axis= 1)
+joined_columns
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/07838266-8dc5-44b2-9145-be024ec95098)
+
+checking for Outliers
+
+the calculation summary statistics of 'Valuation' and 'Funding' columns 
+```
+summary = df[['Valuation', 'Funding']].describe().astype(float)
+```
+
+create a box plot of the 'Quantity' and 'UnitPrice' columns
+```
+fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))
+
+axs[0].boxplot(df['Valuation'])
+axs[0].set_title('Valuation')
+
+axs[1].boxplot(df['Funding'])
+axs[1].set_title('Funding')
+```
+
+add the summary statistics to the box plots
+```
+for i, ax in enumerate(axs):
+    ax.text(0.95, 0.95, f"Min: {summary.iloc[3,i]}\nQ1: {summary.iloc[4,i]}\nMedian: {summary.iloc[5,i]}\nQ3: {summary.iloc[6,i]}\nMax: {summary.iloc[7,i]}", transform=ax.transAxes, fontsize=10, va='top', ha='right', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+```
+
+adjust the spacing between subplots
+```
+fig.tight_layout()
+```
+show the box plot
+```
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/747039b5-952a-43a4-bc53-3bdde91c0f81)
+
+
