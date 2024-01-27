@@ -994,7 +994,7 @@ plt.title("Top 10 Select Investors by Funding", fontsize=20, fontweight='bold')
 plt.show()
 ```
 ### Top 10 Select Investors By Funding
-![Unicorn 5](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/3f337cac-d27a-45ce-a55d-482d006c2a6f)
+![Unicorn 5](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/8406ccee-73d4-4adc-84a3-36e07a78db42)
 
 #### Observation and Summary:
 
@@ -1013,3 +1013,103 @@ The table provides valuable insights into the top 10 select investors by funding
 **Impact on Unicorn Ecosystem:** Collectively, these top investors play a critical role in shaping the unicorn ecosystem, driving innovation, and facilitating the growth of disruptive startups. Their investments provide crucial capital, mentorship, and networking opportunities that enable unicorn companies to achieve their ambitious growth targets and disrupt traditional industries.
 
 In summary, the top 10 select investors by funding represent a diverse and influential group of stakeholders that contribute significantly to the success and growth of unicorn companies worldwide. Their strategic investments, extensive networks, and deep pockets play a pivotal role in fueling innovation, driving market disruption, and shaping the future of the global economy.
+
+#### The Top 10 Countries with the Most Select Investors
+```
+top10_investors = df.groupby(['Country'])['Select Investors'].size().sort_values(ascending= False).head(10)
+top10_investors
+```
+Create a Bar plot for the Top 10 Countries with the most Select Investors
+```
+top10_investors = df.groupby('Country')['Select Investors'].size().sort_values(ascending=False).head(10)
+
+plt.figure(figsize=(11, 6))
+sns.countplot(x='Country', data=df, order=top10_investors.index)
+plt.title('Top 10 Countries With The Most Select Investors', fontsize=14, fontweight= 'bold')
+plt.xlabel('Country', fontsize=10, fontweight= 'bold')
+plt.ylabel('No. of Select Investors', fontsize=10, fontweight= 'bold')
+```
+add labels for the number of companies for each bar
+
+```
+for i in range(len(top10_investors)):
+    plt.text(x=i, y=top10_investors.iloc[i]+1, s=top10_investors.iloc[i], ha='center', fontsize=10, fontweight= 'bold')
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/cf857f93-4eb9-4f54-b057-68804205e07b)
+
+#### Observation and Summary:
+
+The table highlights the top 10 countries with the most select investors, providing insights into the global distribution of investor activity and the geographic concentration of investment ecosystems. Here's the observation and summary:
+
+**Dominance of the United States:** The **United States** leads the list by a significant margin, with **562 select investors**. This dominance underscores the country's status as the world's leading hub for venture capital and startup investment. With Silicon Valley as its epicenter, the U.S. boasts a robust ecosystem of investors, including venture capital firms, angel investors, corporate investors, and family offices, contributing to its vibrant startup culture and entrepreneurial spirit.
+
+**Rise of China and India:** **China** and **India** follow the United States with **173** and **65 select investors**, respectively. Both countries have witnessed rapid economic growth and technological advancement in recent years, leading to the emergence of thriving startup ecosystems. Chinese investors, in particular, have played a pivotal role in funding the country's booming tech sector, while Indian investors have fueled the growth of India's burgeoning startup landscape, especially in sectors like e-commerce, fintech, and software development.
+
+**European Representation:** The **United Kingdom, Germany, France**, and **Israel** represent Europe's strong presence in the global investment landscape. These countries have well-established startup ecosystems supported by a mix of government initiatives, academic research, and private sector investment. London, Berlin, Paris, and Tel Aviv serve as key hubs for investment activity, attracting both domestic and international investors looking to tap into Europe's diverse pool of talent and innovation.
+
+**Emerging Markets:** **Brazil** and **South Korea** make the list, signaling the growing importance of emerging markets in the global investment landscape. Both countries have seen an uptick in venture capital investment in recent years, driven by increasing entrepreneurship, government support for innovation, and a rising middle class. Investors are drawn to the growth potential and untapped opportunities offered by these dynamic emerging economies.
+
+**Canada's Contribution:** **Canada** rounds out the top 10 with **19 select investors**. While smaller in scale compared to the United States and China, Canada's startup ecosystem has seen steady growth, particularly in cities like Toronto, Vancouver, and Montreal. Canadian investors are actively supporting the country's burgeoning tech sector, investing in a wide range of industries including artificial intelligence, clean tech, and biotechnology.
+
+In summary, the top 10 countries with the most select investors reflect the global distribution of investment activity and the diversity of startup ecosystems around the world. While the United States remains the dominant player in venture capital and startup funding, countries like China, India, and those in Europe are quickly gaining ground, fueled by a combination of innovation, entrepreneurship, and investor support. As the global economy continues to evolve, these countries are likely to remain key players in shaping the future of entrepreneurship and innovation on a global scale.
+
+#### Unicorn Companies Trend By Year Joined
+
+```
+total_companies = df.groupby('Date Joined')['Company'].size().reset_index(name= 'Total Companies')
+total_companies
+```
+
+Plotting a Line chart
+
+extract year from the 'Date Joined' column
+
+```
+total_companies['Year'] = total_companies['Date Joined'].dt.year
+```
+
+sum the total companies by the year they joined
+
+```
+total_companies_by_year = total_companies.groupby('Year')['Total Companies'].sum().reset_index()
+```
+
+create a line plot
+
+```
+plt.figure(figsize=(12, 6))  # Adjust the figure size as needed
+sns.set_style("white")
+```
+
+create the line plot
+```
+ax = sns.lineplot(x='Year', y='Total Companies', data=total_companies_by_year, marker='o', color='b', label='Total No. of Unicorn Companies')
+```
+
+add labels with the count on top of each data point
+
+```
+for index, row in total_companies_by_year.iterrows():
+    ax.text(row['Year'], row['Total Companies'], f'{row["Total Companies"]}', ha='center', va='bottom', fontsize=10, color='black', fontweight= 'bold')
+```
+customize the plot
+
+```
+ax.set(xlabel="Year Joined", ylabel="Total Companies")
+plt.title(" Unicorn Companies Trend By Year Joined", fontsize=14, fontweight= 'bold')
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/8316f545-6391-43c2-9f4d-10cac0aeed61)
+
+#### Observation and Summary:
+
+The initial years when companies started becoming unicorns was preceded by a significant spark of innovation which birthed the first unicorn company, Veepee In 2007. Vice Media and Klarna became the second and third companies to become unicorns in 2011, followed by Trendy Group International, Space X, Fanatics and Avant all in 2012. A sudden surge was witness between 2014 and 2015 when 48 companies became unicorn. A slight slide downwards was happened in 2016 when 21 companies joined the unicorns which dropped from 35 in 2015. A commendable
+growth was witnessed from 2017 when 44 companies joined the unicorns to 2018 when 103 companies also joined the billionaires club. 
+
+The explosive growth and emergence of unicorn companies continued its steady rise in 2020 with 108 companies joining the unicorns to 2021 when it peaked at a mind-blowing 520. A sudden decline downwards was happened in 2022 when 116 companies joined the unicorn. The negative impact of the pandemic had a significant impact on this trend which slowed down consumer spending and this resulted to decreased investment.
+
+The effect of this decline came as a result of increased volatility in the financial markets which made it more difficult for startups to raise capital. This resulted to a decrease in valuation. This massive surge in the emergence of unicorn companies across the globe can be attributed to technological advancement, favorable market conditions, and entrepreneurial zeal. This journey through the years of the emergence of unicorns is truly a testament to the unrelenting pursuit of transformative ideas shaping the future of businesses.
+
