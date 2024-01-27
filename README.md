@@ -780,3 +780,46 @@ The table presents the top 5 countries with the most number of unicorn companies
 **Germany** rounds out the top 5 with **26 unicorn companies**. Germany's strong industrial base, engineering expertise, and skilled workforce have laid the foundation for a thriving startup ecosystem. Berlin, Munich, and Hamburg are among the cities driving unicorn growth in sectors such as automotive, software, and e-commerce.
 
 In summary, the table reflects the global distribution of unicorn companies, with the **United States** leading the pack by a significant margin, followed by **China, India, the United Kingdom,** and **Germany**. These countries represent key centers of innovation and entrepreneurship, where unicorn ecosystems have flourished due to a combination of factors such as access to capital, talent, market size, and supportive ecosystems. As the global startup landscape continues to evolve, these countries are likely to remain at the forefront of unicorn creation and innovation in the years to come.
+
+#### The Top 5 Cities with the higest number of Unicorn Companies
+```
+top5_cities = df.groupby(['City'])['Company'].size().sort_values(ascending=False).head(5)
+top5_cities
+```
+creating a horizontal barplot to show the Top 10 Cities with the highest concentration of Unicorn Companies 
+```
+plt.figure(figsize=(10, 6))  # Adjust the figure size as needed
+sns.set_style("white")
+custom_palette = sns.color_palette = ['#08306b', '#08519c', '#6F8FAF', '#0096FF', '#2171b5']
+
+plt.figure(figsize=(12, 6))
+sns.barplot(x='City', y='Company', data=top5_cities.reset_index(), palette= custom_palette, dodge=False)
+```
+add labels for the number of cities for each bar
+```
+for i in range(len(top5_cities)):
+    plt.text(x=i, y=top5_cities.iloc[i]+1, s=top5_cities.iloc[i], ha='center', fontsize=11, fontweight= 'bold')
+
+plt.title('Top 5 Cities with the Most Concentration of Unicorn Companies', fontsize=15, fontweight='bold')
+plt.xlabel('Unicorn Cities', fontsize=10, fontweight= 'bold')
+plt.ylabel('No. of Unicorn Companies', fontsize=10, fontweight= 'bold')
+
+plt.show()
+```
+![image](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/1984ffa0-7f38-48c2-b61a-4b6971102385)
+
+#### Observation and Summary:
+
+The table presents the top 5 cities with the most number of unicorn companies, showcasing the urban centers where unicorn ecosystems have flourished. Here are the key observations and a summary of the findings:
+
+**San Francisco** leads the list with an impressive **152 unicorn companies**. As the heart of Silicon Valley, **San Francisco** has long been synonymous with innovation and entrepreneurship, attracting startups and venture capital from around the world. The city's proximity to leading technology companies, prestigious universities, and a supportive ecosystem of investors and mentors has contributed to its status as a global hub for unicorn creation.
+
+**New York** follows closely behind with **103 unicorn companies**. **New York City's** diverse economy, access to capital, and vibrant startup scene have propelled its growth as a major center for unicorn activity. The city's strengths in industries such as finance, media, e-commerce, and technology have fostered the development of unicorn companies across various sectors.
+
+**Beijing** ranks third with **63 unicorn companies**. As the capital of China, **Beijing** is a key player in the country's rapidly expanding startup ecosystem. The city's dynamic economy, government support for innovation, and concentration of tech talent have made it a fertile ground for unicorn creation, particularly in sectors such as technology, e-commerce, and artificial intelligence.
+
+**Shanghai** follows **Beijing** with **44 unicorn companies**. **Shanghai's** status as a global financial hub and its strategic location on China's eastern coast have attracted a diverse array of unicorn companies across industries such as finance, e-commerce, logistics, and technology. The city's modern infrastructure, international connectivity, and access to talent have fueled its growth as a unicorn hotspot.
+
+**London** rounds out the top 5 with **34 unicorn companies**. As the capital of the United Kingdom, **London** is a leading global financial center and a hub for innovation and entrepreneurship. The city's diverse economy, world-class universities, and vibrant cultural scene have fostered a thriving startup ecosystem, attracting unicorn companies in finance, technology, e-commerce, and other sectors.
+
+In summary, the table reflects the concentration of unicorn companies in key cities around the world, with **San Francisco** and **New York** leading the pack followed by **Beijing, Shanghai**, and **London**. These cities serve as epicenters of innovation and entrepreneurship, offering access to capital, talent, and a supportive ecosystem that fosters unicorn creation and growth. As the global startup landscape continues to evolve, these cities are likely to remain at the forefront of unicorn activity, driving innovation and economic growth in their respective regions.
