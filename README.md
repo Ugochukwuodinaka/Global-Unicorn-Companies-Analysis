@@ -12,7 +12,7 @@
 - [View Dashboard Report](#view-power-bi-dashboard-report)
 
 
-## Project Screenshot From Power Bi Dashboard
+## Project Screenshot From Power BI Dashboard
 ![Unicorn_Companies_Analysis_Project_Dashboard_page- 1](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/d35e957d-8082-4c86-9f2a-d381917ff0ef)
 
 ## Project Overview
