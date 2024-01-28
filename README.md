@@ -20,7 +20,7 @@
 
 The emergence of "unicorn" companies, private startups valued at over $1 billion, has reshaped the global economy and investment landscape. This data analysis project aims to explore the evolution, evolvement, and growth of these unicorns from 1919, marking the inception of the first unicorn, through to 2021. By analyzing historical data, trends, and significant events, this project seeks to provide insights into the factors contributing to the rise of unicorn companies and their impact on various industries and economies.
 
-**Objectives:**
+#### Objectives:
 
 - Trace the history of unicorn companies from 1919 to 2021.
   
@@ -31,8 +31,9 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 - Examine factors contributing to the growth and success of unicorn companies.
   
 - Assess the impact of unicorn companies on innovation, investment, and economic development.
+
   
-**Methodology:**
+#### Methodology:
 
 **Data Collection:** Gather historical data on unicorn companies from reputable sources.
 
@@ -46,7 +47,8 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 
 **Regression Analysis:** Conduct regression analysis to identify factors influencing the valuation and success of unicorn companies.
 
-**Expected Findings:**
+
+#### Expected Findings:
 
 **Growth Trajectory:** A steep increase in the number of unicorn companies, especially in technology and finance sectors, with notable spikes following periods of economic growth and technological innovation.
 
@@ -58,7 +60,8 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 
 **Impact on Economy:** Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
 
-**Conclusion:**
+
+#### Conclusion:
 
 The evolution of unicorn companies from 1919 to 2021 represents a transformative force in the global economy, reshaping industries, driving innovation, and attracting unprecedented levels of investment. By understanding the factors driving their growth and success, policymakers, investors, and entrepreneurs can better navigate the opportunities and challenges presented by the unicorn phenomenon. This analysis provides valuable insights into the past, present, and future of unicorn companies and their impact on the world economy.
 
