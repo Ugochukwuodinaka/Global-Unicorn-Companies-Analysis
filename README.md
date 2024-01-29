@@ -31,44 +31,82 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 - How are these unocorn companies spread across industries and locations?
   
 #### Objectives:
+- Determine the total valuation of unicorn companies by 2022.
+- Identify the total number of industries represented by unicorn companies and quantify the total count of unicorn companies within this analysis.
+- Rank and highlight the most valued unicorn companies based on their valuation metrics.
+- Analyze and map the distribution of unicorn companies across countries to identify regions hosting the majority of unicorns.
+- Identify and analyze the unicorn companies receiving the highest funding from investors.
+- Evaluate and determine the most valued industries among unicorn companies.
+- Utilize spatial analysis to identify cities with the highest concentration of unicorn companies.
+- Present a yearly trend analysis showcasing the founding dates of unicorn companies to understand their emergence over time.
+- Provide a yearly trend analysis illustrating the emergence of unicorn companies over time.
+- Analyze the valuation trend of unicorn companies to identify patterns and fluctuations.
+- Explore and visualize the distribution of unicorn companies across industries and locations to understand their spread and concentration dynamics.
 
-- Trace the history of unicorn companies from 1919 to 2021.
+### Tools Used
+- Python (Was used for Data Cleaning, profilling and Exploratory Data Analysis)
   
-- Identify key milestones, such as the first unicorn, major funding rounds, and significant exits.
-  
-- Analyze geographical distribution and industry trends among unicorn companies.
-  
-- Examine factors contributing to the growth and success of unicorn companies.
-  
-- Assess the impact of unicorn companies on innovation, investment, and economic development.
+- Power BI (Was used to create reports and dashboard for this analysis)
 
-  
-#### Methodology:
+### Methodology (Python):
+- Data Collection: Gather historical data on unicorn companies from reputable sources.
+- Data Cleaning and Validation: Ensure accuracy and consistency of the collected data through rigorous validation and cleaning processes.
+- Descriptive Analysis: Perform descriptive statistics to analyze trends in the number of unicorn companies over time, geographical distribution, and industry sectors.
+- Time Series Analysis: Utilize time series techniques to identify patterns, cycles, and fluctuations in unicorn company growth.
+- Comparative Analysis: Compare the characteristics and performance of unicorn companies across different regions and industries.
+- Regression Analysis: Conduct regression analysis to identify factors influencing the valuation and success of unicorn companies.
 
-**Data Collection:** Gather historical data on unicorn companies from reputable sources.
+**Data Preprocessing:**
+1. Convert the Funding Column from a "string" to a "float".
+2. Define a custom function to convert the string to Decimal
+3. Remove the '$' signs from the string
+4. Extract the numerical part of the string
+5. Get the last character to determine the scale (Billion or Million)
+6. Multiply the numeric value based on the scale
+7. Re-add back the '$' sign and return as a Decimal object
 
-**Data Cleaning and Validation:** Ensure accuracy and consistency of the collected data through rigorous validation and cleaning processes.
+- Exploratory Data Analysis (EDA): Conduct EDA to gain insights into Global Unicorn Companies emergence, evolvement over the years, industries, funding, locations and valuation with line charts, bar charts, doughnut charts, pie charts, funnels and maps.
 
-**Descriptive Analysis:** Perform descriptive statistics to analyze trends in the number of unicorn companies over time, geographical distribution, and industry sectors.
+### Statistical Analysis:
 
-**Time Series Analysis:** Utilize time series techniques to identify patterns, cycles, and fluctuations in unicorn company growth.
+- Calculate descriptive statistics, including mean, median, standard deviation, and correlation coefficients, to quantify Global Unicorn Companies valuation and funding trends over the years.
 
-**Comparative Analysis:** Compare the characteristics and performance of unicorn companies across different regions and industries.
+### Expected Findings:
 
-**Regression Analysis:** Conduct regression analysis to identify factors influencing the valuation and success of unicorn companies.
+- Growth Trajectory: A steep increase in the number of unicorn companies, especially in technology and finance sectors, with notable spikes following periods of economic growth and technological innovation.
 
+- Geographical Distribution: Concentration of unicorn companies in tech hubs such as Silicon Valley, but with a rising presence in other regions globally, reflecting the globalization of entrepreneurship and venture capital.
 
-#### Expected Findings:
+- Industry Trends: Dominance of technology-related sectors, including e-commerce, fintech, and software, but also significant presence in healthcare, transportation, and energy industries.
 
-**Growth Trajectory:** A steep increase in the number of unicorn companies, especially in technology and finance sectors, with notable spikes following periods of economic growth and technological innovation.
+- Funding Dynamics: Shifts in funding sources and strategies, from early-stage venture capital to late-stage private equity and crossover investments, influencing unicorn company valuations and exit strategies.
 
-**Geographical Distribution:** Concentration of unicorn companies in tech hubs such as Silicon Valley, but with a rising presence in other regions globally, reflecting the globalization of entrepreneurship and venture capital.
+- Impact on Economy: Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
 
-**Industry Trends:** Dominance of technology-related sectors, including e-commerce, fintech, and software, but also significant presence in healthcare, transportation, and energy industries.
+## Dataset Overview
+The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. These dataset was released by [Quantum Analytics](https://www.quantumanalyticsco.org/). The Data Dictionary can be viewed and downloaded [here(Data_Dictionary.csv) while the main dataset can also be viewed and downloaded [here](Unicorn_Companies.csv). The main dataset is made up of data for Global Unicorn Companies from the founding of the first Unicorn  companyin 1919 to the year 2022. The Data Dictionary file gives an explanation of the fields in the main dataset. The main dataset has the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
 
-**Funding Dynamics:** Shifts in funding sources and strategies, from early-stage venture capital to late-stage private equity and crossover investments, influencing unicorn company valuations and exit strategies.
+The dataset contains 8 columns and here's a breakdown of what each column represents:
 
-**Impact on Economy:** Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
+- Company: This column contains the names of the unicorn companies included in the dataset.
+
+- Valuation: This column contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the market.
+
+- Date Joined: This column contains the date when each company achieved unicorn status, which means the date when their valuation exceeded $1 billion.
+
+- Industry: This column contains the industry or sector to which each unicorn company belongs. It specifies the primary area of business or the market in which the company operates.
+
+- City: This column contains the city where each unicorn company is headquartered or has a significant presence.
+
+- Country: This column contains the country where each unicorn company is based or founded.
+
+- Continent: This column contains the continent where each unicorn company's country is located.
+
+- Year Founded: This column contains the year when each unicorn company was established or founded.
+
+- Funding: This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
+
+- Select Investors: This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
 
 
 #### Conclusion:
@@ -76,31 +114,6 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 The evolution of unicorn companies from 1919 to 2021 represents a transformative force in the global economy, reshaping industries, driving innovation, and attracting unprecedented levels of investment. By understanding the factors driving their growth and success, policymakers, investors, and entrepreneurs can better navigate the opportunities and challenges presented by the unicorn phenomenon. This analysis provides valuable insights into the past, present, and future of unicorn companies and their impact on the world economy.
 
 
-## Dataset Overview
-The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. These dataset was released by [Quantum Analytics](https://www.quantumanalyticsco.org/). It is made up of CSV files for Global Unicorn Companies from the founding of the first Unicorn in 1919 to the year 2021. The Data_Dictionary.csv file gives an explanation of the fields in the main dataset Unicorn_Companies.csv, while the main dataset comes with the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
-
-## Metadata
-The dataset contains 8 columns and here's a breakdown of what each column represents:
-
-**Company:** This column contains the names of the unicorn companies included in the dataset.
-
-**Valuation:** This column contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the market.
-
-**Date Joined:** This column contains the date when each company achieved unicorn status, which means the date when their valuation exceeded $1 billion.
-
-**Industry:** This column contains the industry or sector to which each unicorn company belongs. It specifies the primary area of business or the market in which the company operates.
-
-**City:** This column contains the city where each unicorn company is headquartered or has a significant presence.
-
-**Country:** This column contains the country where each unicorn company is based or founded.
-
-**Continent:** This column contains the continent where each unicorn company's country is located.
-
-**Year Founded:** This column contains the year when each unicorn company was established or founded.
-
-**Funding:** This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
-
-**Select Investors:** This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
 
 ## Data Cleaning and Exploratory Data Analysis using Python
 
