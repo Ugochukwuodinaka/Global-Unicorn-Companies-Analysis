@@ -158,6 +158,7 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 
 ## Data Analysis and Visuals in Power BI:
 ![](Unicorn_Companies_Analysis_Project_Dashboard_page-%201.jpg)
+![](Unicorn_Companies_Analysis_Project_Dashboard_page-%202.jpg)
 
 1. From the dashboard, it is observed that the total Uunicorn Valuation as of 2022 is $3.711T 
 2. The Total number of Unicorn Companies is 1074 and total number of industries is 15
