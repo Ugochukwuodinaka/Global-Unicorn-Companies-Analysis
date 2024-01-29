@@ -168,7 +168,43 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 8. 2022 saw a downward trend and a decline in the number of Companies that emerged as Unicorns with 112 Companies joining. This downward trend can be attributed to the negative effects of the pandemic which slowed down consumer spending and this resulted to decreased investment. The effect of this also came as a result of the volatility in the financial markets which made it difficult for startups to raise capital.
 9. A complete PowerPoint Prentation in PDF of this project analysis can be viewed [here](EDA%20OF%20GLOBAL%20UNICORNS%20USING%20PYTHON%20-%20ODINAKACHUKWU%20UGOCHUKWU%20NNANNA.pdf)
 
+## Factors That Influences The Emergence of Unicorns
+
+**1. Timeline Variation:**
+The emergence of a company into the league of unicorn companies can depend on factors such as their industry, their market conditions, their business model and the availability of funding.
+
+**2 The Technology Advantage:**
+In recent years, the technology sector have witnessed a speedy growth. Areas such as software development, e-commerce, internet services, and artificial intelligence have witnessed a rapid revolution, disruption and rapid development. Investors are more likely to invest in the technology sector.
+
+**3 Innovative Startup Edge:**
+The last decade have witnessed a surge in founding of a good number of innovative startups globally. This surge has also attracted a good number of investors into raising capital funding for these startups thereby helping many startups to hit and surpass the $1 billion mark.
+
+**4 The Global Economy:**
+With the rapid advancement of technology, the inter-connective nature of the global economy has been on a rapid rise and this have enhanced the growth of companies with the potential to emerge as unicorns. The ability to reach global audience, have access to international investors and take advantage of digital platforms for marketing and distribution has played a great role in making it possible for companies to achieve the unicorn status.
+
+**5 Prevailing Market Conditions:**
+Market and economic conditions plays a vital role. Periods of economic growth and increased investor confidence may be advantageous to companies by having easier access to funding which can aid their rapid growth towards attaining the status of a unicorn company.
+
+## Recommendations Towards The Growth of Unicorn Companies
+**1.Strategic Vision and Clarity:**
+Maintain a clear and compelling vision for the company's future. This vision should guide strategic decisions, resonate with stakeholders, and inspire the team. Clearly define long-term goals and the path to achieving them
+
+**2 Strategic Partnerships and Alliances:**
+Explore strategic partnerships and alliances that can accelerate growth. Collaborating with complementary businesses, alliances with industry leaders, or entering into joint ventures can provide access to new markets, technologies, or resources.
+
+**3 Scalability and Operational Efficiency:**
+Ensure that the company's operations are scalable. Invest in technologies and processes that allow for efficient scaling without compromising quality. Operational excellence is vital for managing growth effectively.
+
+**4 Data-Driven Decision-Making:**
+Embrace data-driven decision-making. Leverage data analytics to gain insights into customer behavior, market trends, and internal operations. Informed decision-making can lead to more effective strategies and resource allocation.
+
+**5 Financial Discipline:**
+Maintain financial discipline and transparency. Implement robust financial management practices, monitor key performance indicators, and allocate resources strategically. Strong financial health is fundamental to sustaining growth.
+
+**6 Global Expansion and Internationalization:**
+Consider opportunities for global expansion. Unicorn companies often have the potential to operate on a global scale. Expanding internationally can unlock new markets, customer bases, and revenue streams.
+
 
 ## View Power BI Dashboard Report
-Here’s a link to a [Dsshboard Report](https://app.powerbi.com/view?r=eyJrIjoiNTgxOTQ1N2QtM2RmOS00OTQzLWFiOTgtMTY4YjEwMzY4NTlmIiwidCI6IjdlYzI5NjU5LTNjZjItNGYzZi1hYmIzLWE3MjJlZGY3ZmYyZCJ9) I created in the second phase of this project . This dashboard report displays a vivid visual of this analysis on Global Unicorn Compoanies.
+Here’s a link to a [Dsshboard Report](https://app.powerbi.com/view?r=eyJrIjoiNTgxOTQ1N2QtM2RmOS00OTQzLWFiOTgtMTY4YjEwMzY4NTlmIiwidCI6IjdlYzI5NjU5LTNjZjItNGYzZi1hYmIzLWE3MjJlZGY3ZmYyZCJ9) I created in the second phase of this project. This dashboard report displays a vivid visual of this analysis on Global Unicorn Compoanies in Power BI Report.
 
