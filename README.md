@@ -1,5 +1,5 @@
 # Exploratory-Data-Analysis-of-Global-Unicorn-Companies
-![](Unicorn.jpg)
+![](Unicorn_new.jpg)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -12,15 +12,24 @@
 - [Recommendations Towards The Growth of Unicorn Companies](#recommendations-towards-the-growth-of-unicorn-companies)
 - [View Dashboard Report](#view-power-bi-dashboard-report)
 
-
-## Project Screenshot From Power BI Dashboard
-![Unicorn_Companies_Analysis_Project_Dashboard_page- 1](https://github.com/Ugochukwuodinaka/Exploratory-Data-Analysis-of-Global-Unicorn-Companies/assets/157266999/d35e957d-8082-4c86-9f2a-d381917ff0ef)
-
 ## Project Overview
-**Introduction:**
+### Introduction:
 
 The emergence of "unicorn" companies, private startups valued at over $1 billion, has reshaped the global economy and investment landscape. This data analysis project aims to explore the evolution, evolvement, and growth of these unicorns from 1919, marking the inception of the first unicorn, through to 2021. By analyzing historical data, trends, and significant events, this project seeks to provide insights into the factors contributing to the rise of unicorn companies and their impact on various industries and economies.
 
+### Problem Statement
+- What is the total valuation of Unicorns by 2022?
+- What are tyhe total number of industries and unicorn companies in this analysis?
+- Which companies are the most valued unicorns?
+- Which countries host a majority of the unicorns?
+- Which companies has the highest funding from investors?
+- Which industries are the mostr valued?
+- Which cities have the most concentration of unicorn companies?
+- When was this Unicorn companies founded? Show a yearly trend.
+- When did these companies emerge as unicorns? Show a yearly trend.
+- What is the valuation trend of these companies?
+- How are these unocorn companies spread across industries and locations?
+  
 #### Objectives:
 
 - Trace the history of unicorn companies from 1919 to 2021.
