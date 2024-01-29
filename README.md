@@ -3,14 +3,14 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [EDA With Python](#data-cleaning-and-exploratory-data-analysis-using-python)
-- [KPIs](#key-performance-indicators)
-- [Univariate Analysis](#univariate-analysis)
-- [Bivariate Amalysis](#bivariate-analysis)
-- [Observation and Summary](#observation-and-summary)
-- [Factors That Influence The Emergence of Unicorns](#a-survey-of-factors-that-influences-the-emergence-of-unicorns)
-- [Recommendations Towards The Growth of Unicorn Companies](#recommendations-towards-the-growth-of-unicorn-companies)
-- [View Dashboard Report](#view-power-bi-dashboard-report)
+- [Tools Used](#tools-used)
+- [Dataset Overview](#dataset-overview)
+- [Global Unicorn Companies Data EDA In Python](#global_unicorn_companies_data_eda_in_python)
+- [Data Analysis and Visuals in Power BI](#data_analysis_and_visuals_in_power_bi)
+- [Factors That Influences The Emergence of Unicorns](#factors_that_influences_the_emergence_of_unicorns)
+- [Recommendations Towards The Growth of Unicorn Companies](#recommendations_towards_the_growth_of_unicorn_companies)
+- [View Power BI Dashboard Report](#view-power-bi-dashboard-report)
+
 
 ## Project Overview
 ### Introduction:
