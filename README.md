@@ -5,10 +5,10 @@
 - [Project Overview](#project-overview)
 - [Tools Used](#tools-used)
 - [Dataset Overview](#dataset-overview)
-- [Global Unicorn Companies Data EDA In Python](#global_unicorn_companies_data_eda_in_python)
-- [Data Analysis and Visuals in Power BI](#data_analysis_and_visuals_in_power_bi)
-- [Factors That Influences The Emergence of Unicorns](#factors_that_influences_the_emergence_of_unicorns)
-- [Recommendations Towards The Growth of Unicorn Companies](#recommendations_towards_the_growth_of_unicorn_companies)
+- [Global Unicorn Companies Data EDA In Python](#global-unicorn-companies-data-eda-in-python)
+- [Data Analysis and Visuals in Power BI](#data-analysis-and-visuals-in-power-bi)
+- [Factors That Influences The Emergence of Unicorns](#factors-that-influences-the-emergence-of-unicorns)
+- [Recommendations Towards The Growth of Unicorn Companies](#recommendations-towards-the-growth-of-unicorn-companies)
 - [View Power BI Dashboard Report](#view-power-bi-dashboard-report)
 
 
