@@ -1,5 +1,5 @@
 # Exploratory-Data-Analysis-of-Global-Unicorn-Companies
-![](Unicorn_new.jpg)
+![](Unicorn_image.jpg)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
