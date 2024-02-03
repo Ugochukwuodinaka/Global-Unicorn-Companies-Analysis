@@ -104,7 +104,7 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 ### Dataset Overview
 The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. This dataset was released by [Quantum Analytics](https://www.quantumanalyticsco.org/). The Data Dictionary can be viewed or downloaded [here](Data_Dictionary.csv) while the main dataset can also be viewed and downloaded [here](Unicorn_Companies.csv). The main dataset is made up of data for Global Unicorn Companies from the founding of the first Unicorn  companyin 1919 to the year 2022. The Data Dictionary file gives an explanation of the fields in the main dataset. The main dataset has the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
 
-The dataset contains 8 columns and here's a breakdown of what each column represents:
+The dataset contains 8 columns and 1,075 columns, here's a breakdown of what each column represents:
 
 - Company: This column contains the names of the unicorn companies included in the dataset.
 
