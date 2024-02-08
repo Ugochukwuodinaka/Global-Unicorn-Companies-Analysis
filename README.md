@@ -1,5 +1,5 @@
 # Exploratory-Data-Analysis-of-Global-Unicorn-Companies
-![](Unicorn_image.jpg)
+![](images/Unicorn_image.jpg)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -133,35 +133,35 @@ The evolution of unicorn companies from 1919 to 2022 represents a transformative
 
 ## Global Unicorn Companies Data EDA In Python:
 
-Top 10 Most Valued Unicorns               | Top 8 Unocorns With Most Funding        
-:----------------------------------------:|:--------------------------------------------:|
-![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/24721d57-cfd3-4fb1-b6b5-81d566f48c05) | ![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/dc5e178b-2f43-4d69-9d28-503ffe40423d)
+Top 10 Most Valued Unicorns                   | Top 8 Unocorns With Most Funding        
+:--------------------------------------------:|:--------------------------------------------:|
+![](images/Top_10_Most_Valuable_Unicorns.png) | ![](images/Top_8_Unicorn_With_Most_Funding.png)
 
 
-Top 10 Countries With Most Select Inveastors                                     |Top 10 Select Investors By Funding 
-:-------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
-![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/c57f8710-c934-424d-b0e3-74700c5c9813)|![](Top_10_Select_Investors_by_Funding.png)  
+Top 10 Countries With Most Select Inveastors               |Top 10 Select Investors By Funding 
+:---------------------------------------------------------:|:------------------------------------------------------:|
+![](images/Top_10_Countries_With_Most_Select_Investors.png)|![](images/Top_10_Select_Investors_by_Funding.png)  
 
-Top 5 Cities With Most Unicorns Concentration                       |Top 5 Countries With Most Unicorms 
-:------------------------------------------------------------------:|:----------------------------------------------------------------:|
-![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/ceb2afbc-fcda-4989-a1f5-fd2a1fa021c5)|![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/0beec31c-85f4-4067-aa87-fa47e6619658)
-
-
-Top 5 Industries By Valuation                                       |Unicorns Distribution Across Industries 
-:------------------------------------------------------------------:|:----------------------------------------------------------------:|
-![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/65a64ced-abe0-4b84-bfa7-eb05d9e6317f)|![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/a7f88d8e-0c4a-470f-a3f5-4fcf9c8ae1cc)
+Top 5 Cities With Most Unicorns Concentration                  |Top 5 Countries With Most Unicorms 
+:-------------------------------------------------------------:|:--------------------------------------------------:|
+![](images/Top_5_Cities_With_Most_Unicorn%20_Concentration.png)|![](images/Top_5_Countries_With_Most_Unicorns.png)
 
 
-Unicorns Trend By Year Founded                                      |Unicorns Trend By Year Joined 
-:------------------------------------------------------------------:|:----------------------------------------------------------------:|
-![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/137fb5d5-d057-4d6b-bebc-28dbf6987811)|![](https://github.com/Ugochukwuodinaka/Global-Unicorn-Companies-Analysis/assets/157266999/9e0c4c45-42a7-4cd0-b55a-b5ce614f9bf8)
+Top 5 Industries By Valuation                |Unicorns Distribution Across Industries 
+:-------------------------------------------:|:----------------------------------------------------------------:|
+![](images/Top_5_Industries_By_Valuation.png)|![](images/Unicorns_Distribution_Across_Industries.png)
+
+
+Unicorns Trend By Year Founded                |Unicorns Trend By Year Joined 
+:--------------------------------------------:|:----------------------------------------------------------------:|
+![](images/Unicorns_Trend_By_Year_Founded.png)|![](images/Unicorns_Trend_By_Year%20_Joined.png)
  
 
 To view the complete Exploratory Data Analysis (EDA) of this project in python Jupiter Notebook, please click [here](Unicorn_Companies_Exploratory_Data_Analysis.ipynb)
 
 ## Data Analysis and Visuals in Power BI:
-![](Unicorn_Companies_Analysis_Project_Dashboard_page-%201.jpg)
-![](Unicorn_Companies_Analysis_Project_Dashboard_page-%202.jpg)
+![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%201.jpg)
+![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%202.jpg)
 
 1. From the dashboard, it is observed that the total Uunicorn Valuation as of 2022 is $3.711T 
 2. The Total number of Unicorn Companies is 1074 and total number of industries is 15
