@@ -67,12 +67,12 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
         8. Button
 
 ### Methodology (Python):
-- Data Collection: Gather historical data on unicorn companies from reputable sources.
-- Data Cleaning and Validation: Ensure accuracy and consistency of the collected data through rigorous validation and cleaning processes.
-- Descriptive Analysis: Perform descriptive statistics to analyze trends in the number of unicorn companies over time, geographical distribution, and industry sectors.
-- Time Series Analysis: Utilize time series techniques to identify patterns, cycles, and fluctuations in unicorn company growth.
-- Comparative Analysis: Compare the characteristics and performance of unicorn companies across different regions and industries.
-- Regression Analysis: Conduct regression analysis to identify factors influencing the valuation and success of unicorn companies.
+- __Data Collection:__ Gather historical data on unicorn companies from reputable sources.
+- __Data Cleaning and Validation:__ Ensure accuracy and consistency of the collected data through rigorous validation and cleaning processes.
+- __Descriptive Analysis:__ Perform descriptive statistics to analyze trends in the number of unicorn companies over time, geographical distribution, and industry sectors.
+- __Time Series Analysis:__ Utilize time series techniques to identify patterns, cycles, and fluctuations in unicorn company growth.
+- __Comparative Analysis:__ Compare the characteristics and performance of unicorn companies across different regions and industries.
+- __Regression Analysis:__ Conduct regression analysis to identify factors influencing the valuation and success of unicorn companies.
 
 **Data Preprocessing:**
 1. Convert the Funding Column from a "string" to a "float".
@@ -83,7 +83,7 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 6. Multiply the numeric value based on the scale
 7. Re-add back the '$' sign and return as a Decimal object
 
-- Exploratory Data Analysis (EDA): Conduct EDA to gain insights into Global Unicorn Companies emergence, evolvement over the years, industries, funding, locations and valuation with line charts, bar charts, doughnut charts, pie charts, funnels and maps.
+- __Exploratory Data Analysis (EDA):__ Conduct EDA to gain insights into Global Unicorn Companies emergence, evolvement over the years, industries, funding, locations and valuation with line charts, bar charts, doughnut charts, pie charts, funnels and maps.
 
 ### Statistical Analysis:
 
@@ -91,40 +91,31 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 
 ### Expected Findings:
 
-- Growth Trajectory: A steep increase in the number of unicorn companies, especially in technology and finance sectors, with notable spikes following periods of economic growth and technological innovation.
+- __Growth Trajectory:__ A steep increase in the number of unicorn companies, especially in technology and finance sectors, with notable spikes following periods of economic growth and technological innovation.
 
-- Geographical Distribution: Concentration of unicorn companies in tech hubs such as Silicon Valley, but with a rising presence in other regions globally, reflecting the globalization of entrepreneurship and venture capital.
+- __Geographical Distribution:__ Concentration of unicorn companies in tech hubs such as Silicon Valley, but with a rising presence in other regions globally, reflecting the globalization of entrepreneurship and venture capital.
 
-- Industry Trends: Dominance of technology-related sectors, including e-commerce, fintech, and software, but also significant presence in healthcare, transportation, and energy industries.
+- __Industry Trends:__ Dominance of technology-related sectors, including e-commerce, fintech, and software, but also significant presence in healthcare, transportation, and energy industries.
 
-- Funding Dynamics: Shifts in funding sources and strategies, from early-stage venture capital to late-stage private equity and crossover investments, influencing unicorn company valuations and exit strategies.
+- __Funding Dynamics:__ Shifts in funding sources and strategies, from early-stage venture capital to late-stage private equity and crossover investments, influencing unicorn company valuations and exit strategies.
 
-- Impact on Economy: Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
+- __Impact on Economy:__ Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
 
 ### Dataset Overview
 The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. This dataset was released by [Quantum Analytics](https://www.quantumanalyticsco.org/). The Data Dictionary can be viewed or downloaded [here](Data/Data_Dictionary.csv) while the main dataset can also be viewed and downloaded [here](Data/Unicorn_Companies.csv). The main dataset is made up of data for Global Unicorn Companies from the founding of the first Unicorn  companyin 1919 to the year 2022. The Data Dictionary file gives an explanation of the fields in the main dataset. The main dataset has the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
 
 The dataset contains 8 columns and 1,075 columns, here's a breakdown of what each column represents:
 
-- Company: This column contains the names of the unicorn companies included in the dataset.
-
-- Valuation: This column contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the market.
-
-- Date Joined: This column contains the date when each company achieved unicorn status, which means the date when their valuation exceeded $1 billion.
-
-- Industry: This column contains the industry or sector to which each unicorn company belongs. It specifies the primary area of business or the market in which the company operates.
-
-- City: This column contains the city where each unicorn company is headquartered or has a significant presence.
-
-- Country: This column contains the country where each unicorn company is based or founded.
-
-- Continent: This column contains the continent where each unicorn company's country is located.
-
-- Year Founded: This column contains the year when each unicorn company was established or founded.
-
-- Funding: This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
-
-- Select Investors: This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
+- __Company:__ This column contains the names of the unicorn companies included in the dataset.
+- __Valuation:__ This column contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the market.
+- __Date Joined:__ This column contains the date when each company achieved unicorn status, which means the date when their valuation exceeded $1 billion.
+- __Industry:__ This column contains the industry or sector to which each unicorn company belongs. It specifies the primary area of business or the market in which the company operates.
+- __City:__ This column contains the city where each unicorn company is headquartered or has a significant presence.
+- __Country:__ This column contains the country where each unicorn company is based or founded.
+- __Continent:__ This column contains the continent where each unicorn company's country is located.
+- __Year Founded:__ This column contains the year when each unicorn company was established or founded.
+- __Funding:__ This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
+- __Select Investors:__ This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
 
 
 #### Conclusion:
@@ -174,38 +165,38 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 
 ## Factors That Influences The Emergence of Unicorns
 
-**1. Timeline Variation:**
+__1. Timeline Variation:__
 The emergence of a company into the league of unicorn companies can depend on factors such as their industry, their market conditions, their business model and the availability of funding.
 
-**2 The Technology Advantage:**
+__2 The Technology Advantage:__
 In recent years, the technology sector have witnessed a speedy growth. Areas such as software development, e-commerce, internet services, and artificial intelligence have witnessed a rapid revolution, disruption and rapid development. Investors are more likely to invest in the technology sector.
 
-**3 Innovative Startup Edge:**
+__3 Innovative Startup Edge:__
 The last decade have witnessed a surge in founding of a good number of innovative startups globally. This surge has also attracted a good number of investors into raising capital funding for these startups thereby helping many startups to hit and surpass the $1 billion mark.
 
-**4 The Global Economy:**
+__4 The Global Economy:__
 With the rapid advancement of technology, the inter-connective nature of the global economy has been on a rapid rise and this have enhanced the growth of companies with the potential to emerge as unicorns. The ability to reach global audience, have access to international investors and take advantage of digital platforms for marketing and distribution has played a great role in making it possible for companies to achieve the unicorn status.
 
-**5 Prevailing Market Conditions:**
+__5 Prevailing Market Conditions:__
 Market and economic conditions plays a vital role. Periods of economic growth and increased investor confidence may be advantageous to companies by having easier access to funding which can aid their rapid growth towards attaining the status of a unicorn company.
 
 ## Recommendations Towards The Growth of Unicorn Companies
-**1.Strategic Vision and Clarity:**
+__1.Strategic Vision and Clarity:__
 Maintain a clear and compelling vision for the company's future. This vision should guide strategic decisions, resonate with stakeholders, and inspire the team. Clearly define long-term goals and the path to achieving them
 
-**2 Strategic Partnerships and Alliances:**
+__2 Strategic Partnerships and Alliances:__
 Explore strategic partnerships and alliances that can accelerate growth. Collaborating with complementary businesses, alliances with industry leaders, or entering into joint ventures can provide access to new markets, technologies, or resources.
 
-**3 Scalability and Operational Efficiency:**
+__3 Scalability and Operational Efficiency:__
 Ensure that the company's operations are scalable. Invest in technologies and processes that allow for efficient scaling without compromising quality. Operational excellence is vital for managing growth effectively.
 
-**4 Data-Driven Decision-Making:**
+__4 Data-Driven Decision-Making:__
 Embrace data-driven decision-making. Leverage data analytics to gain insights into customer behavior, market trends, and internal operations. Informed decision-making can lead to more effective strategies and resource allocation.
 
-**5 Financial Discipline:**
+__5 Financial Discipline:__
 Maintain financial discipline and transparency. Implement robust financial management practices, monitor key performance indicators, and allocate resources strategically. Strong financial health is fundamental to sustaining growth.
 
-**6 Global Expansion and Internationalization:**
+__6 Global Expansion and Internationalization:__
 Consider opportunities for global expansion. Unicorn companies often have the potential to operate on a global scale. Expanding internationally can unlock new markets, customer bases, and revenue streams.
 
 
