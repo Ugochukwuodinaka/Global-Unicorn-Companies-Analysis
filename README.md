@@ -1,4 +1,4 @@
-# Exploratory-Data-Analysis-of-Global-Unicorn-Companies
+# Exploratory Data Analysis Of Global Unicorn Companies
 ![](images/Unicorn_image.jpg)
 
 ## Table of Contents
