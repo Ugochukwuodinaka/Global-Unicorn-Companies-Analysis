@@ -185,7 +185,6 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 9. A complete PowerPoint Prentation in __PDF__ of this project analysis can be viewed [here](EDA%20OF%20GLOBAL%20UNICORNS%20USING%20PYTHON%20-%20ODINAKACHUKWU%20UGOCHUKWU%20NNANNA.pdf)
 <br />
 <br />
-<br />
 
 ## Factors That Influences The Emergence of Unicorns
 
@@ -203,6 +202,8 @@ With the rapid advancement of technology, the inter-connective nature of the glo
 
 __5 Prevailing Market Conditions:__
 Market and economic conditions plays a vital role. Periods of economic growth and increased investor confidence may be advantageous to companies by having easier access to funding which can aid their rapid growth towards attaining the status of a unicorn company.
+<br />
+<br />
 
 ## Recommendations Towards The Growth of Unicorn Companies
 __1.Strategic Vision and Clarity:__
