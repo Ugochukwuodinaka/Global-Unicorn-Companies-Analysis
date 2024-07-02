@@ -90,7 +90,8 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 7. Re-add back the '$' sign and return as a Decimal object
 <br />
 
-- __Exploratory Data Analysis (EDA):__ Conduct EDA to gain insights into Global Unicorn Companies emergence, evolvement over the years, industries, funding, locations and valuation with line charts, bar charts, doughnut charts, pie charts, funnels and maps.
+### Exploratory Data Analysis (EDA):
+- Conduct EDA to gain insights into Global Unicorn Companies emergence, evolvement over the years, industries, funding, locations and valuation with line charts, bar charts, doughnut charts, pie charts, funnels and maps.
 <br />
 
 ### Statistical Analysis:
