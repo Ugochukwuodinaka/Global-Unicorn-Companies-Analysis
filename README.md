@@ -166,9 +166,15 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 <br />
 
 ## Data Analysis and Visuals in Power BI:
+#### Report View 1
 ![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%201.jpg)
-![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%202.png)
 
+#### Report View 2
+![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%202.png)
+<br />
+<br />
+
+### Project Analysis:
 1. From the dashboard, it is observed that the total Uunicorn Valuation as of 2022 is __$3.711T__. 
 2. The Total number of Unicorn Companies is 1074 and total number of industries is __15__.
 3. For Location, the total number of Unicorn Cities is __257__, while the number of Unicorns Countries is __46__.
@@ -177,6 +183,7 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 7. From just __1__ Company emerging as a Unicorn in 2007 to 2021 when the number of Companies that became Unicorns just in that same year peaked at __520__. Factors that brought this this disruption can be attributed to advancement of technology of the global economy, the tech industries advantage, the edge of innovative startups, the prevailing market condition of that period and more.
 8. 2022 saw a downward trend and a decline in the number of Companies that emerged as Unicorns with __112 Companies__ joining. This downward trend can be attributed to the negative effects of the pandemic which slowed down consumer spending and this resulted to decreased investment. The effect of this also came as a result of the volatility in the financial markets which made it difficult for startups to raise capital.
 9. A complete PowerPoint Prentation in __PDF__ of this project analysis can be viewed [here](EDA%20OF%20GLOBAL%20UNICORNS%20USING%20PYTHON%20-%20ODINAKACHUKWU%20UGOCHUKWU%20NNANNA.pdf)
+<br />
 <br />
 <br />
 
