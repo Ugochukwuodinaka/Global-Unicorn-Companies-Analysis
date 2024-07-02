@@ -184,7 +184,6 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 8. 2022 saw a downward trend and a decline in the number of Companies that emerged as Unicorns with __112 Companies__ joining. This downward trend can be attributed to the negative effects of the pandemic which slowed down consumer spending and this resulted to decreased investment. The effect of this also came as a result of the volatility in the financial markets which made it difficult for startups to raise capital.
 9. A complete PowerPoint Prentation in __PDF__ of this project analysis can be viewed [here](EDA%20OF%20GLOBAL%20UNICORNS%20USING%20PYTHON%20-%20ODINAKACHUKWU%20UGOCHUKWU%20NNANNA.pdf)
 <br />
-<br />
 
 ## Factors That Influences The Emergence of Unicorns
 
