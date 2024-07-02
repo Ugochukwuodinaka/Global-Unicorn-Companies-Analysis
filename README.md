@@ -1,5 +1,6 @@
 # Exploratory Data Analysis Of Global Unicorn Companies
 ![](images/Unicorn_image.jpg)
+<br />
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -10,7 +11,7 @@
 - [Factors That Influences The Emergence of Unicorns](#factors-that-influences-the-emergence-of-unicorns)
 - [Recommendations Towards The Growth of Unicorn Companies](#recommendations-towards-the-growth-of-unicorn-companies)
 - [View Power BI Dashboard Report](#view-power-bi-dashboard-report)
-
+<br />
 
 ## Project Overview
 ### Introduction:
@@ -42,6 +43,8 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 - Provide a yearly trend analysis illustrating the emergence of unicorn companies over time.
 - Analyze the valuation trend of unicorn companies to identify patterns and fluctuations.
 - Explore and visualize the distribution of unicorn companies across industries and locations to understand their spread and concentration dynamics.
+<br />
+<br />
 
 ### Tools Used
 1. Python (Was used for Data Cleaning, profilling and Exploratory Data Analysis)
@@ -65,6 +68,8 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
         6. Filters
         7. Tooltips
         8. Button
+<br />
+<br />
 
 ### Methodology (Python):
 - __Data Collection:__ Gather historical data on unicorn companies from reputable sources.
@@ -73,6 +78,7 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 - __Time Series Analysis:__ Utilize time series techniques to identify patterns, cycles, and fluctuations in unicorn company growth.
 - __Comparative Analysis:__ Compare the characteristics and performance of unicorn companies across different regions and industries.
 - __Regression Analysis:__ Conduct regression analysis to identify factors influencing the valuation and success of unicorn companies.
+<br />
 
 **Data Preprocessing:**
 1. Convert the Funding Column from a "string" to a "float".
@@ -82,12 +88,15 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 5. Get the last character to determine the scale (Billion or Million)
 6. Multiply the numeric value based on the scale
 7. Re-add back the '$' sign and return as a Decimal object
+<br />
 
 - __Exploratory Data Analysis (EDA):__ Conduct EDA to gain insights into Global Unicorn Companies emergence, evolvement over the years, industries, funding, locations and valuation with line charts, bar charts, doughnut charts, pie charts, funnels and maps.
+<br />
 
 ### Statistical Analysis:
 
 - Calculate descriptive statistics, including mean, median, standard deviation, and correlation coefficients, to quantify Global Unicorn Companies valuation and funding trends over the years.
+<br />
 
 ### Expected Findings:
 
@@ -100,6 +109,8 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 - __Funding Dynamics:__ Shifts in funding sources and strategies, from early-stage venture capital to late-stage private equity and crossover investments, influencing unicorn company valuations and exit strategies.
 
 - __Impact on Economy:__ Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
+<br />
+<br />
 
 ### Dataset Overview
 The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. This dataset was released by [Quantum Analytics](https://www.quantumanalyticsco.org/). The Data Dictionary can be viewed or downloaded [here](Data/Data_Dictionary.csv) while the main dataset can also be viewed and downloaded [here](Data/Unicorn_Companies.csv). The main dataset is made up of data for Global Unicorn Companies from the founding of the first Unicorn  companyin 1919 to the year 2022. The Data Dictionary file gives an explanation of the fields in the main dataset. The main dataset has the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
@@ -116,11 +127,12 @@ The dataset contains 8 columns and 1,075 columns, here's a breakdown of what eac
 - __Year Founded:__ This column contains the year when each unicorn company was established or founded.
 - __Funding:__ This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
 - __Select Investors:__ This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
-
+<br />
 
 #### Conclusion:
 
 The evolution of unicorn companies from 1919 to 2022 represents a transformative force in the global economy, reshaping industries, driving innovation, and attracting unprecedented levels of investment. By understanding the factors driving their growth and success, policymakers, investors, and entrepreneurs can better navigate the opportunities and challenges presented by the unicorn phenomenon. This analysis provides valuable insights into the past, present, and future of unicorn companies and their impact on the world economy.
+<br />
 
 ## Global Unicorn Companies Data EDA In Python:
 
@@ -146,22 +158,26 @@ Top 5 Industries By Valuation                |Unicorns Distribution Across Indus
 Unicorns Trend By Year Founded                |Unicorns Trend By Year Joined 
 :--------------------------------------------:|:----------------------------------------------------------------:|
 ![](images/Unicorns_Trend_By_Year_Founded.png)|![](images/Unicorns_Trend_By_Year%20_Joined.png)
- 
+<br /> 
 
 To view the complete Exploratory Data Analysis (EDA) of this project in python Jupiter Notebook, please click [here](Unicorn_Companies_Exploratory_Data_Analysis.ipynb)
+<br />
+<br />
 
 ## Data Analysis and Visuals in Power BI:
 ![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%201.jpg)
 ![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%202.png)
 
-1. From the dashboard, it is observed that the total Uunicorn Valuation as of 2022 is $3.711T 
-2. The Total number of Unicorn Companies is 1074 and total number of industries is 15
-3. For Location, the total number of Unicorn Cities is 257, while the number of Unicorns Countries is 46.
-5. The top Unicorn Industries happens to be in the Tech Industry. The Fintech tops this list with 224 Unicorns, nternet Software & Services has 205, E-Commerce & Direct-To-Consumer has 111, while Artificial Intelligence has 84.
-6. Bytedance sits at the top of the most valued Unicorns with a valuation of $180bn, Shein and SpaceX follows with $100bn, Stripe comes next with $95bn.
-7. From 1 Company emerging as a Unicorn in 2007 to 2021 when the number of Companies that became Unicorns just in that same year peaked at 520. Factors that brought this this disruption can be attributed to advancement of technology of the global economy, the tech industries advantage, the edge of innovative startups, the prevailing market condition of that period and more.
-8. 2022 saw a downward trend and a decline in the number of Companies that emerged as Unicorns with 112 Companies joining. This downward trend can be attributed to the negative effects of the pandemic which slowed down consumer spending and this resulted to decreased investment. The effect of this also came as a result of the volatility in the financial markets which made it difficult for startups to raise capital.
-9. A complete PowerPoint Prentation in PDF of this project analysis can be viewed [here](EDA%20OF%20GLOBAL%20UNICORNS%20USING%20PYTHON%20-%20ODINAKACHUKWU%20UGOCHUKWU%20NNANNA.pdf)
+1. From the dashboard, it is observed that the total Uunicorn Valuation as of 2022 is __$3.711T__. 
+2. The Total number of Unicorn Companies is 1074 and total number of industries is __15__.
+3. For Location, the total number of Unicorn Cities is __257__, while the number of Unicorns Countries is __46__.
+5. The top Unicorn Industries happens to be in the Tech Industry. The Fintech tops this list with 224 Unicorns, nternet Software & Services has __205__, E-Commerce & Direct-To-Consumer has __111__, while Artificial Intelligence has __84__.
+6. Bytedance sits at the top of the most valued Unicorns with a valuation of __$180bn__, Shein and SpaceX follows with __$100bn__, Stripe comes next with __$95bn__.
+7. From just __1__ Company emerging as a Unicorn in 2007 to 2021 when the number of Companies that became Unicorns just in that same year peaked at __520__. Factors that brought this this disruption can be attributed to advancement of technology of the global economy, the tech industries advantage, the edge of innovative startups, the prevailing market condition of that period and more.
+8. 2022 saw a downward trend and a decline in the number of Companies that emerged as Unicorns with __112 Companies__ joining. This downward trend can be attributed to the negative effects of the pandemic which slowed down consumer spending and this resulted to decreased investment. The effect of this also came as a result of the volatility in the financial markets which made it difficult for startups to raise capital.
+9. A complete PowerPoint Prentation in __PDF__ of this project analysis can be viewed [here](EDA%20OF%20GLOBAL%20UNICORNS%20USING%20PYTHON%20-%20ODINAKACHUKWU%20UGOCHUKWU%20NNANNA.pdf)
+<br />
+<br />
 
 ## Factors That Influences The Emergence of Unicorns
 
@@ -198,8 +214,12 @@ Maintain financial discipline and transparency. Implement robust financial manag
 
 __6 Global Expansion and Internationalization:__
 Consider opportunities for global expansion. Unicorn companies often have the potential to operate on a global scale. Expanding internationally can unlock new markets, customer bases, and revenue streams.
-
+<br />
+<br />
 
 ## View Power BI Dashboard Report
 Here’s a link to a [Dsshboard Report](https://app.powerbi.com/view?r=eyJrIjoiNTgxOTQ1N2QtM2RmOS00OTQzLWFiOTgtMTY4YjEwMzY4NTlmIiwidCI6IjdlYzI5NjU5LTNjZjItNGYzZi1hYmIzLWE3MjJlZGY3ZmYyZCJ9) I created in the second phase of this project. This dashboard report displays a vivid visual of this analysis on Global Unicorn Compoanies in Power BI Report.
+<br />
+<br />
 
+## Thank You For Following Through!
