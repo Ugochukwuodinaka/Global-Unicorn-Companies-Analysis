@@ -165,10 +165,10 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 
 ## Data Analysis and Visuals in Power BI:
 #### Report View 1
-![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%201.jpg)
+![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-1.jpg)
 
 #### Report View 2
-![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-%202.png)
+![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-2.jpg)
 <br />
 <br />
 
