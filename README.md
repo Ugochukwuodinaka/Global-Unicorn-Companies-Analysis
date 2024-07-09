@@ -81,13 +81,13 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 <br />
 
 **Data Preprocessing:**
-1. Convert the Funding Column from a "string" to a "float".
-2. Define a custom function to convert the string to Decimal
-3. Remove the '$' signs from the string
-4. Extract the numerical part of the string
-5. Get the last character to determine the scale (Billion or Million)
-6. Multiply the numeric value based on the scale
-7. Re-add back the '$' sign and return as a Decimal object
+- Convert the Funding Column from a __"string"__ to a __"float"__.
+- Define a custom function to convert the string to Decimal
+- Remove the __'$'__ signs from the string
+- Extract the numerical part of the string
+- Get the last character to determine the scale (Billion or Million)
+- Multiply the numeric value based on the scale
+- Re-add the __'$'__ sign and return as a Decimal object
 <br />
 
 ### Exploratory Data Analysis (EDA):
@@ -102,21 +102,31 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 ### Expected Findings:
 
 - __Growth Trajectory:__ A steep increase in the number of unicorn companies, especially in technology and finance sectors, with notable spikes following periods of economic growth and technological innovation.
-
 - __Geographical Distribution:__ Concentration of unicorn companies in tech hubs such as Silicon Valley, but with a rising presence in other regions globally, reflecting the globalization of entrepreneurship and venture capital.
-
 - __Industry Trends:__ Dominance of technology-related sectors, including e-commerce, fintech, and software, but also significant presence in healthcare, transportation, and energy industries.
-
 - __Funding Dynamics:__ Shifts in funding sources and strategies, from early-stage venture capital to late-stage private equity and crossover investments, influencing unicorn company valuations and exit strategies.
-
 - __Impact on Economy:__ Contribution of unicorn companies to job creation, wealth generation, and innovation, but also concerns about market concentration, regulatory challenges, and potential bubble risks.
 <br />
 <br />
 
 ### Dataset Overview
-The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. This dataset was released by [Quantum Analytics](https://www.quantumanalyticsco.org/). The Data Dictionary can be viewed or downloaded [here](Data/Data_Dictionary.csv) while the main dataset can also be viewed and downloaded [here](Data/Unicorn_Companies.csv). The main dataset is made up of data for Global Unicorn Companies from the founding of the first Unicorn  companyin 1919 to the year 2022. The Data Dictionary file gives an explanation of the fields in the main dataset. The main dataset has the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
+The primary dataset used in this analysis is the "Unicorn_Companies.csv" and "Data_Dictionary-1.csv" files. This dataset was provided by [Quantum Analytics](https://www.quantumanalyticsco.org/). The Data Dictionary can be viewed or downloaded [here](Data/Data_Dictionary.csv) while the main dataset can also be viewed and downloaded [here](Data/Unicorn_Companies.csv). The main dataset is made up of data for Global Unicorn Companies from the founding of the first Unicorn company in 1919 to the year 2022. The Data Dictionary file gives an explanation of the fields in the main dataset. The main dataset has the columns: Company, Valuation, Date Joined, Industry, City, Country, Continent, Year Founded, Funding, and Select Investors.
 
-The dataset contains 8 columns and 1,075 columns, here's a breakdown of what each column represents:
+The dataset contains 8 columns and 1,075 rows of data, here's a breakdown of what each column represents:
+
+| Table                              | Field                    | Description                            |            
+|:-----------------------------------|:------------------------ |:-------------------------------------- |
+|Unicorn Companies                   | Company                  | Contains the names of the unicorn companies included in the dataset   |
+|                                    | Valuation                | Contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the marketContains data related to the profitability of e-commerce sales through INCREFF     |
+|                                    | Date Joined              | Contains the date when each company achieved unicorn status, which means the date when their valuation exceeded $1 billion.         |
+|                                    | Industry                 | Contains the industry or sector to which each unicorn company belongs. It specifies the primary area of business or the market in which the company operates.Unique identifier for each design         |
+|                                    | City                     | Contains the city where each unicorn company is headquartered or has a significant presence        |
+|                                    | Country                  | Contains the country where each unicorn company is based or founded         |
+|                                    | Continent                | Contains the continent where each unicorn company's country is located        |
+|                                    | Year Founded             | Contains the year when each unicorn company was established or founded         |
+|                                    | Funding                  | Contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.        |
+|                                    | Select Investors         | Contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors        |
+<br />
 
 - __Company:__ This column contains the names of the unicorn companies included in the dataset.
 - __Valuation:__ This column contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the market.
