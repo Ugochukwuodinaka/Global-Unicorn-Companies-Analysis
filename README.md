@@ -128,18 +128,6 @@ The dataset contains 8 columns and 1,075 rows of data, here's a breakdown of wha
 |                                    | Select Investors         | Contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors        |
 <br />
 
-- __Company:__ This column contains the names of the unicorn companies included in the dataset.
-- __Valuation:__ This column contains the valuation of each unicorn company, measured in terms of billion dollars ($1 billion or more), which represents the estimated worth of the company in the market.
-- __Date Joined:__ This column contains the date when each company achieved unicorn status, which means the date when their valuation exceeded $1 billion.
-- __Industry:__ This column contains the industry or sector to which each unicorn company belongs. It specifies the primary area of business or the market in which the company operates.
-- __City:__ This column contains the city where each unicorn company is headquartered or has a significant presence.
-- __Country:__ This column contains the country where each unicorn company is based or founded.
-- __Continent:__ This column contains the continent where each unicorn company's country is located.
-- __Year Founded:__ This column contains the year when each unicorn company was established or founded.
-- __Funding:__ This column contains information about the total funding raised by each unicorn company, which represents the cumulative amount of investment capital received from investors.
-- __Select Investors:__ This column contains the names of notable investors or investment firms that have provided funding to each unicorn company. It may include venture capital firms, private equity investors, or other institutional investors.
-<br />
-
 #### Conclusion:
 
 The evolution of unicorn companies from 1919 to 2022 represents a transformative force in the global economy, reshaping industries, driving innovation, and attracting unprecedented levels of investment. By understanding the factors driving their growth and success, policymakers, investors, and entrepreneurs can better navigate the opportunities and challenges presented by the unicorn phenomenon. This analysis provides valuable insights into the past, present, and future of unicorn companies and their impact on the world economy.
