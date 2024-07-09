@@ -208,3 +208,4 @@ Here’s a link to a dashboard I created in the second phase of this project - [
 <br />
 
 ## Thank You For Following Through!
+![](images/Thank_you.jpg)
