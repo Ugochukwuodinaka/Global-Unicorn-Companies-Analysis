@@ -164,10 +164,10 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 <br />
 
 ## Data Analysis and Visuals in Power BI:
-#### Report View 1
+#### Key Insights
 ![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-1.jpg)
 
-#### Report View 2
+#### Overview
 ![](images/Unicorn_Companies_Analysis_Project_Dashboard_page-2.jpg)
 <br />
 <br />
@@ -203,7 +203,7 @@ To view the complete Exploratory Data Analysis (EDA) of this project in python J
 <br />
 
 ## View Power BI Dashboard Report
-Here’s a link to a dashboard I created in the second phase of this project - [Dsshboard Report](https://app.powerbi.com/view?r=eyJrIjoiNTgxOTQ1N2QtM2RmOS00OTQzLWFiOTgtMTY4YjEwMzY4NTlmIiwidCI6IjdlYzI5NjU5LTNjZjItNGYzZi1hYmIzLWE3MjJlZGY3ZmYyZCJ9). This dashboard report showcases a vivid visual of this analysis on Global Unicorn Compoanies in Power BI Report.
+Here’s a link to the reports I created in the second phase of this project - [Dsshboard Report](https://app.powerbi.com/view?r=eyJrIjoiNTgxOTQ1N2QtM2RmOS00OTQzLWFiOTgtMTY4YjEwMzY4NTlmIiwidCI6IjdlYzI5NjU5LTNjZjItNGYzZi1hYmIzLWE3MjJlZGY3ZmYyZCJ9). This dashboard report showcases a vivid visual of this analysis on Global Unicorn Compoanies in Power BI.
 <br />
 <br />
 
