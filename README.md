@@ -20,7 +20,7 @@ The emergence of "unicorn" companies, private startups valued at over $1 billion
 
 ### Problem Statement
 - What is the total valuation of Unicorns by 2022?
-- What are tyhe total number of industries and unicorn companies in this analysis?
+- What are the total number of industries and unicorn companies in this analysis?
 - Which companies are the most valued unicorns?
 - Which countries host a majority of the unicorns?
 - Which companies has the highest funding from investors?
